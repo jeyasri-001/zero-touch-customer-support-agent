@@ -17,7 +17,8 @@ env/
 
 # ChromaDB / vector store data (will be rebuilt on deploy)
 data/chromadb/
-chroma.sqlite3
+data/chroma_db/
+**/chroma.sqlite3
 *.chroma
 
 # Logs
