@@ -1,0 +1,41 @@
+services:
+  # ============ API ============
+  - type: web
+    name: zero-touch-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: ENV
+        value: production
+      - key: JIRA_BASE_URL
+        value: https://fundsindia.atlassian.net
+      - key: JIRA_EMAIL
+        sync: false
+      - key: JIRA_API_TOKEN
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_MODEL
+        value: llama-3.3-70b-versatile
+      - key: LANGSMITH_API_KEY
+        sync: false
+      - key: LANGSMITH_PROJECT
+        value: zero-touch-agent
+      - key: LANGCHAIN_TRACING_V2
+        value: "true"
+      - key: JIRA_TICKETS
+        value: NOC-21854,NOC-1346,NOC-11734
+
+  # ============ Dashboard ============
+  - type: web
+    name: zero-touch-dashboard
+    runtime: docker
+    plan: free
+    dockerfilePath: ./dashboard/Dockerfile
+    dockerContext: ./dashboard
+    envVars:
+      - key: API_URL
+        value: https://zero-touch-api.onrender.com

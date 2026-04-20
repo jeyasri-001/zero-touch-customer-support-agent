@@ -1,0 +1,379 @@
+{
+  "ticket": {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "119706",
+    "self": "https://fundsindia.atlassian.net/rest/api/2/issue/119706",
+    "key": "NOC-21854",
+    "fields": {
+      "statuscategorychangedate": "2025-07-07T10:25:56.659+0530",
+      "issuetype": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/issuetype/10622",
+        "id": "10622",
+        "description": "Bugs track problems or errors.",
+        "iconUrl": "https://fundsindia.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10303?size=medium",
+        "name": "Bug",
+        "subtask": false,
+        "avatarId": 10303,
+        "entityId": "643e78e9-45c9-4ddd-a375-5b2ca396223f",
+        "hierarchyLevel": 0
+      },
+      "timespent": null,
+      "project": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/project/11868",
+        "id": "11868",
+        "key": "NOC",
+        "name": "FI-NOC",
+        "projectTypeKey": "business",
+        "simplified": true,
+        "avatarUrls": {
+          "48x48": "https://fundsindia.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/11401",
+          "24x24": "https://fundsindia.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/11401?size=small",
+          "16x16": "https://fundsindia.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/11401?size=xsmall",
+          "32x32": "https://fundsindia.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/11401?size=medium"
+        },
+        "projectCategory": {
+          "self": "https://fundsindia.atlassian.net/rest/api/2/projectCategory/10005",
+          "id": "10005",
+          "description": "",
+          "name": "NOC"
+        }
+      },
+      "fixVersions": [],
+      "aggregatetimespent": null,
+      "customfield_11244": [
+        {
+          "self": "https://fundsindia.atlassian.net/rest/api/2/customFieldOption/10993",
+          "value": "No Issue found/Auto resolve",
+          "id": "10993"
+        }
+      ],
+      "statusCategory": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      },
+      "resolution": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/resolution/10000",
+        "id": "10000",
+        "description": "Work has been completed on this issue.",
+        "name": "Done"
+      },
+      "customfield_11358": [
+        {
+          "self": "https://fundsindia.atlassian.net/rest/api/2/customFieldOption/11277",
+          "value": "Admin portal",
+          "id": "11277"
+        }
+      ],
+      "customfield_11239": null,
+      "resolutiondate": "2025-07-07T10:25:56.623+0530",
+      "workratio": -1,
+      "watches": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/issue/NOC-21854/watchers",
+        "watchCount": 2,
+        "isWatching": false
+      },
+      "lastViewed": "2026-04-20T11:31:16.294+0530",
+      "customfield_11190": null,
+      "customfield_11191": null,
+      "customfield_11192": null,
+      "customfield_11270": null,
+      "customfield_11193": null,
+      "customfield_11194": null,
+      "created": "2025-07-05T14:49:04.341+0530",
+      "customfield_11195": null,
+      "customfield_11196": null,
+      "customfield_11230": null,
+      "customfield_11231": null,
+      "customfield_11232": null,
+      "customfield_11277": null,
+      "priority": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/priority/3",
+        "iconUrl": "https://fundsindia.atlassian.net/images/icons/priorities/major_new.svg",
+        "name": "Medium",
+        "id": "3"
+      },
+      "customfield_11357": null,
+      "labels": [
+        "sre-sip"
+      ],
+      "customfield_11226": null,
+      "customfield_11227": null,
+      "customfield_11228": "sridevi.j@fundsindia.com",
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/user?accountId=62a3127e451c000069676498",
+        "accountId": "62a3127e451c000069676498",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/ad0bfc6f8a2f3904a2b183d0502ac665?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJA-2.png",
+          "24x24": "https://secure.gravatar.com/avatar/ad0bfc6f8a2f3904a2b183d0502ac665?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJA-2.png",
+          "16x16": "https://secure.gravatar.com/avatar/ad0bfc6f8a2f3904a2b183d0502ac665?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJA-2.png",
+          "32x32": "https://secure.gravatar.com/avatar/ad0bfc6f8a2f3904a2b183d0502ac665?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJA-2.png"
+        },
+        "displayName": "Janani a",
+        "active": true,
+        "timeZone": "Asia/Kolkata",
+        "accountType": "atlassian"
+      },
+      "updated": "2025-07-07T18:01:49.008+0530",
+      "status": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/status/11122",
+        "description": "",
+        "iconUrl": "https://fundsindia.atlassian.net/",
+        "name": "Done",
+        "id": "11122",
+        "statusCategory": {
+          "self": "https://fundsindia.atlassian.net/rest/api/2/statuscategory/3",
+          "id": 3,
+          "key": "done",
+          "colorName": "green",
+          "name": "Done"
+        }
+      },
+      "components": [],
+      "customfield_12350": null,
+      "timeoriginalestimate": null,
+      "description": "Hi team\r\nThe investor has two active SIPs for Axis ELSS Tax Saver Fund-Reg(G), which did not process for the month of June. Kindly confirm us the reason for the SIP failure.\r\n ",
+      "customfield_11187": null,
+      "customfield_11220": null,
+      "customfield_11188": null,
+      "customfield_11189": [
+        {
+          "self": "https://fundsindia.atlassian.net/rest/api/2/user?accountId=712020%3A79c68bc2-f580-4953-84b0-495003262259",
+          "accountId": "712020:79c68bc2-f580-4953-84b0-495003262259",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/30a6dd11d510af5c1450d6796b0f636a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDA-3.png",
+            "24x24": "https://secure.gravatar.com/avatar/30a6dd11d510af5c1450d6796b0f636a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDA-3.png",
+            "16x16": "https://secure.gravatar.com/avatar/30a6dd11d510af5c1450d6796b0f636a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDA-3.png",
+            "32x32": "https://secure.gravatar.com/avatar/30a6dd11d510af5c1450d6796b0f636a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDA-3.png"
+          },
+          "displayName": "Dharaneshwaran A",
+          "active": true,
+          "timeZone": "Asia/Kolkata",
+          "accountType": "atlassian"
+        }
+      ],
+      "customfield_11146": null,
+      "customfield_11621": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/customFieldOption/11937",
+        "value": "Clarification",
+        "id": "11937"
+      },
+      "customfield_11147": null,
+      "timetracking": {},
+      "security": null,
+      "attachment": [],
+      "aggregatetimeestimate": null,
+      "summary": "AHYPR8658L- SIP failure reason",
+      "creator": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/user?accountId=63da138aa5d0c8263069484d",
+        "accountId": "63da138aa5d0c8263069484d",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/7895a0edaae2584f266a24dad3789541?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/7895a0edaae2584f266a24dad3789541?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/7895a0edaae2584f266a24dad3789541?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/7895a0edaae2584f266a24dad3789541?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-3.png"
+        },
+        "displayName": "Sridharan",
+        "active": true,
+        "timeZone": "Asia/Kolkata",
+        "accountType": "atlassian"
+      },
+      "customfield_11291": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/customFieldOption/11112",
+        "value": "B2C",
+        "id": "11112"
+      },
+      "customfield_11292": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/customFieldOption/11116",
+        "value": "Mutual Funds",
+        "id": "11116"
+      },
+      "subtasks": [],
+      "customfield_11293": null,
+      "customfield_11294": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/customFieldOption/11128",
+        "value": "Others (Please specify the issue in description)",
+        "id": "11128"
+      },
+      "customfield_11295": null,
+      "customfield_11296": null,
+      "customfield_11131": "2025-07-07",
+      "reporter": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/user?accountId=63da138aa5d0c8263069484d",
+        "accountId": "63da138aa5d0c8263069484d",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/7895a0edaae2584f266a24dad3789541?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/7895a0edaae2584f266a24dad3789541?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/7895a0edaae2584f266a24dad3789541?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/7895a0edaae2584f266a24dad3789541?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-3.png"
+        },
+        "displayName": "Sridharan",
+        "active": true,
+        "timeZone": "Asia/Kolkata",
+        "accountType": "atlassian"
+      },
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "customfield_10200": null,
+      "customfield_10002": "0|i0evro:",
+      "customfield_10003": null,
+      "customfield_11654": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/customFieldOption/11479",
+        "value": "Customer Support",
+        "id": "11479"
+      },
+      "environment": null,
+      "duedate": "2025-07-08",
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/issue/NOC-21854/votes",
+        "votes": 0,
+        "hasVoted": false
+      },
+      "comment": {
+        "comments": [
+          {
+            "self": "https://fundsindia.atlassian.net/rest/api/2/issue/119706/comment/158350",
+            "id": "158350",
+            "author": {
+              "self": "https://fundsindia.atlassian.net/rest/api/2/user?accountId=62a3127e451c000069676498",
+              "accountId": "62a3127e451c000069676498",
+              "avatarUrls": {
+                "48x48": "https://secure.gravatar.com/avatar/ad0bfc6f8a2f3904a2b183d0502ac665?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJA-2.png",
+                "24x24": "https://secure.gravatar.com/avatar/ad0bfc6f8a2f3904a2b183d0502ac665?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJA-2.png",
+                "16x16": "https://secure.gravatar.com/avatar/ad0bfc6f8a2f3904a2b183d0502ac665?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJA-2.png",
+                "32x32": "https://secure.gravatar.com/avatar/ad0bfc6f8a2f3904a2b183d0502ac665?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJA-2.png"
+              },
+              "displayName": "Janani a",
+              "active": true,
+              "timeZone": "Asia/Kolkata",
+              "accountType": "atlassian"
+            },
+            "body": "Hi sridevi,\n\nGiven Investor sip has been paused for june month by \u201c[Jayalakshmi.J@fundsindia.com|mailto:Jayalakshmi.J@fundsindia.com]\u201c on 30th may , PFA logs for your reference\n\n2025-05-30 11:13:21,565 INFO \n                [1828034] [61.246.52.34] com.fi.core.app.controller.investment.InvestorInfoController.editSystematicPlanSip:2720: #Systematic-Plan Sips PUT API Request | #Payload : {\n    \"holdingProfileId\": \"1112576\",\n    \"referenceId\": \"1492322\",\n    \"schemeCode\": \"8408\",\n    \"portfolio\": false,\n    \"otpReferenceId\": \"\",\n    \"type\": \"regular\",\n    \"pauseMonth\": 1\n} | #UserId : 1828034 | #ManagementUserId : 2837608|#ChannelId:10|#Stage:prod|\n\n\n\n2025-05-30 11:13:31,766 INFO \n                [1828034] [61.246.52.34] com.fi.core.app.controller.investment.InvestorInfoController.editSystematicPlanSip:2720: #Systematic-Plan Sips PUT API Request | #Payload : {\n    \"holdingProfileId\": \"1112576\",\n    \"referenceId\": \"1492323\",\n    \"schemeCode\": \"8408\",\n    \"portfolio\": false,\n    \"otpReferenceId\": \"\",\n    \"type\": \"regular\",\n    \"pauseMonth\": 1\n} | #UserId : 1828034 | #ManagementUserId : 2837608|#ChannelId:10|#Stage:prod|",
+            "updateAuthor": {
+              "self": "https://fundsindia.atlassian.net/rest/api/2/user?accountId=62a3127e451c000069676498",
+              "accountId": "62a3127e451c000069676498",
+              "avatarUrls": {
+                "48x48": "https://secure.gravatar.com/avatar/ad0bfc6f8a2f3904a2b183d0502ac665?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJA-2.png",
+                "24x24": "https://secure.gravatar.com/avatar/ad0bfc6f8a2f3904a2b183d0502ac665?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJA-2.png",
+                "16x16": "https://secure.gravatar.com/avatar/ad0bfc6f8a2f3904a2b183d0502ac665?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJA-2.png",
+                "32x32": "https://secure.gravatar.com/avatar/ad0bfc6f8a2f3904a2b183d0502ac665?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJA-2.png"
+              },
+              "displayName": "Janani a",
+              "active": true,
+              "timeZone": "Asia/Kolkata",
+              "accountType": "atlassian"
+            },
+            "created": "2025-07-07T10:25:52.181+0530",
+            "updated": "2025-07-07T10:25:52.181+0530",
+            "jsdPublic": true
+          }
+        ],
+        "self": "https://fundsindia.atlassian.net/rest/api/2/issue/119706/comment",
+        "maxResults": 1,
+        "total": 1,
+        "startAt": 0
+      },
+      "worklog": {
+        "startAt": 0,
+        "maxResults": 20,
+        "total": 0,
+        "worklogs": []
+      }
+    }
+  },
+  "analysis": {
+    "key": "NOC-21854",
+    "summary": "AHYPR8658L- SIP failure reason",
+    "description": "Hi team\r\nThe investor has two active SIPs for Axis ELSS Tax Saver Fund-Reg(G), which did not process for the month of June. Kindly confirm us the reason for the SIP failure.\r\n ",
+    "status": "Done",
+    "status_category": "Done",
+    "created": "2025-07-05T14:49:04.341+0530",
+    "updated": "2025-07-07T18:01:49.008+0530",
+    "resolved": "2025-07-07T10:25:56.623+0530",
+    "reporter": "Sridharan",
+    "assignee": "Janani a",
+    "labels": [
+      "sre-sip"
+    ],
+    "issue_type": "Bug",
+    "priority": "Medium",
+    "comments_count": 1,
+    "changelog": [],
+    "custom_fields": {
+      "customfield_11244": [
+        {
+          "self": "https://fundsindia.atlassian.net/rest/api/2/customFieldOption/10993",
+          "value": "No Issue found/Auto resolve",
+          "id": "10993"
+        }
+      ],
+      "customfield_11358": [
+        {
+          "self": "https://fundsindia.atlassian.net/rest/api/2/customFieldOption/11277",
+          "value": "Admin portal",
+          "id": "11277"
+        }
+      ],
+      "customfield_11228": "sridevi.j@fundsindia.com",
+      "customfield_11189": [
+        {
+          "self": "https://fundsindia.atlassian.net/rest/api/2/user?accountId=712020%3A79c68bc2-f580-4953-84b0-495003262259",
+          "accountId": "712020:79c68bc2-f580-4953-84b0-495003262259",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/30a6dd11d510af5c1450d6796b0f636a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDA-3.png",
+            "24x24": "https://secure.gravatar.com/avatar/30a6dd11d510af5c1450d6796b0f636a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDA-3.png",
+            "16x16": "https://secure.gravatar.com/avatar/30a6dd11d510af5c1450d6796b0f636a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDA-3.png",
+            "32x32": "https://secure.gravatar.com/avatar/30a6dd11d510af5c1450d6796b0f636a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDA-3.png"
+          },
+          "displayName": "Dharaneshwaran A",
+          "active": true,
+          "timeZone": "Asia/Kolkata",
+          "accountType": "atlassian"
+        }
+      ],
+      "customfield_11621": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/customFieldOption/11937",
+        "value": "Clarification",
+        "id": "11937"
+      },
+      "customfield_11291": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/customFieldOption/11112",
+        "value": "B2C",
+        "id": "11112"
+      },
+      "customfield_11292": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/customFieldOption/11116",
+        "value": "Mutual Funds",
+        "id": "11116"
+      },
+      "customfield_11294": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/customFieldOption/11128",
+        "value": "Others (Please specify the issue in description)",
+        "id": "11128"
+      },
+      "customfield_11131": "2025-07-07",
+      "customfield_10002": "0|i0evro:",
+      "customfield_11654": {
+        "self": "https://fundsindia.atlassian.net/rest/api/2/customFieldOption/11479",
+        "value": "Customer Support",
+        "id": "11479"
+      }
+    }
+  },
+  "comments": {
+    "total": 1,
+    "comments": []
+  }
+}

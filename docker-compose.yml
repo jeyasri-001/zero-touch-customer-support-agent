@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  # FastAPI Backend
+  api:
+    build: .
+    container_name: zero-touch-api
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=development
+      - DEBUG=true
+      - JIRA_BASE_URL=${JIRA_BASE_URL}
+      - JIRA_EMAIL=${JIRA_EMAIL}
+      - JIRA_API_TOKEN=${JIRA_API_TOKEN}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    volumes:
+      - ./app:/app/app
+      - ./data:/app/data
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    networks:
+      - zero-touch-network
+
+  # Redis for caching
+  redis:
+    image: redis:7-alpine
+    container_name: zero-touch-redis
+    ports:
+      - "6379:6379"
+    networks:
+      - zero-touch-network
+
+  # Streamlit Dashboard
+  dashboard:
+    build:
+      context: ./dashboard
+    container_name: zero-touch-dashboard
+    ports:
+      - "8501:8501"
+    environment:
+      - API_URL=http://api:8000
+    depends_on:
+      - api
+    networks:
+      - zero-touch-network
+
+networks:
+  zero-touch-network:
+    driver: bridge

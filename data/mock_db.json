@@ -1,0 +1,3166 @@
+{
+  "transactions": [
+    {
+      "transaction_id": "TXN20260420000000",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN658L000",
+      "amount": 500.0,
+      "status": "FAILED",
+      "bank_code": "91",
+      "rejection_reason": "BANK_TEMP_UNAVAILABLE",
+      "retry_eligible": true,
+      "created_at": "2026-04-04T12:24:15.057451",
+      "updated_at": "2026-04-04T12:24:15.057451",
+      "sip_date": "2026-04-04",
+      "issue_type": "PAYMENT_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000001",
+      "customer_id": "ATUPN0386P",
+      "mandate_id": "MAN386P001",
+      "amount": 1000.0,
+      "status": "SUCCESS",
+      "bank_code": null,
+      "rejection_reason": null,
+      "retry_eligible": false,
+      "created_at": "2026-04-09T12:24:15.057501",
+      "updated_at": "2026-04-09T12:24:15.057501",
+      "sip_date": "2026-04-09",
+      "issue_type": "SUCCESS"
+    },
+    {
+      "transaction_id": "TXN20260420000002",
+      "customer_id": "ATUPN0386P",
+      "mandate_id": "MAN386P002",
+      "amount": 500.0,
+      "status": "FAILED",
+      "bank_code": "54",
+      "rejection_reason": "MANDATE_EXPIRED",
+      "retry_eligible": false,
+      "created_at": "2026-03-26T12:24:15.057530",
+      "updated_at": "2026-03-26T12:24:15.057530",
+      "sip_date": "2026-03-26",
+      "issue_type": "MANDATE_EXPIRY"
+    },
+    {
+      "transaction_id": "TXN20260420000003",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN658L003",
+      "amount": 25000.0,
+      "status": "FAILED",
+      "bank_code": "54",
+      "rejection_reason": "MANDATE_EXPIRED",
+      "retry_eligible": false,
+      "created_at": "2026-04-13T12:24:15.057563",
+      "updated_at": "2026-04-13T12:24:15.057563",
+      "sip_date": "2026-04-13",
+      "issue_type": "MANDATE_EXPIRY"
+    },
+    {
+      "transaction_id": "TXN20260420000004",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN658L004",
+      "amount": 10000.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-04-12T12:24:15.057584",
+      "updated_at": "2026-04-12T12:24:15.057584",
+      "sip_date": "2026-04-12",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000005",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R005",
+      "amount": 500.0,
+      "status": "FAILED",
+      "bank_code": "91",
+      "rejection_reason": "BANK_TEMP_UNAVAILABLE",
+      "retry_eligible": true,
+      "created_at": "2026-04-08T12:24:15.057603",
+      "updated_at": "2026-04-08T12:24:15.057603",
+      "sip_date": "2026-04-08",
+      "issue_type": "PAYMENT_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000006",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN658L006",
+      "amount": 1000.0,
+      "status": "FAILED",
+      "bank_code": "91",
+      "rejection_reason": "BANK_TEMP_UNAVAILABLE",
+      "retry_eligible": true,
+      "created_at": "2026-04-02T12:24:15.057621",
+      "updated_at": "2026-04-02T12:24:15.057621",
+      "sip_date": "2026-04-02",
+      "issue_type": "PAYMENT_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000007",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R007",
+      "amount": 500.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-03-29T12:24:15.057638",
+      "updated_at": "2026-03-29T12:24:15.057638",
+      "sip_date": "2026-03-29",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000008",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R008",
+      "amount": 5000.0,
+      "status": "FAILED",
+      "bank_code": "91",
+      "rejection_reason": "BANK_TEMP_UNAVAILABLE",
+      "retry_eligible": true,
+      "created_at": "2026-03-24T12:24:15.057656",
+      "updated_at": "2026-03-24T12:24:15.057656",
+      "sip_date": "2026-03-24",
+      "issue_type": "PAYMENT_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000009",
+      "customer_id": "ATUPN0386P",
+      "mandate_id": "MAN386P009",
+      "amount": 1000.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-04-11T12:24:15.057676",
+      "updated_at": "2026-04-11T12:24:15.057676",
+      "sip_date": "2026-04-11",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000010",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN658L010",
+      "amount": 25000.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-03-24T12:24:15.057694",
+      "updated_at": "2026-03-24T12:24:15.057694",
+      "sip_date": "2026-03-24",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000011",
+      "customer_id": "ATUPN0386P",
+      "mandate_id": "MAN386P011",
+      "amount": 5000.0,
+      "status": "FAILED",
+      "bank_code": "54",
+      "rejection_reason": "MANDATE_EXPIRED",
+      "retry_eligible": false,
+      "created_at": "2026-04-01T12:24:15.057711",
+      "updated_at": "2026-04-01T12:24:15.057711",
+      "sip_date": "2026-04-01",
+      "issue_type": "MANDATE_EXPIRY"
+    },
+    {
+      "transaction_id": "TXN20260420000012",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R012",
+      "amount": 25000.0,
+      "status": "FAILED",
+      "bank_code": "54",
+      "rejection_reason": "MANDATE_EXPIRED",
+      "retry_eligible": false,
+      "created_at": "2026-04-19T12:24:15.057761",
+      "updated_at": "2026-04-19T12:24:15.057761",
+      "sip_date": "2026-04-19",
+      "issue_type": "MANDATE_EXPIRY"
+    },
+    {
+      "transaction_id": "TXN20260420000013",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R013",
+      "amount": 10000.0,
+      "status": "FAILED",
+      "bank_code": "91",
+      "rejection_reason": "BANK_TEMP_UNAVAILABLE",
+      "retry_eligible": true,
+      "created_at": "2026-04-01T12:24:15.057778",
+      "updated_at": "2026-04-01T12:24:15.057778",
+      "sip_date": "2026-04-01",
+      "issue_type": "PAYMENT_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000014",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R014",
+      "amount": 5000.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-04-19T12:24:15.057800",
+      "updated_at": "2026-04-19T12:24:15.057800",
+      "sip_date": "2026-04-19",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000015",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R015",
+      "amount": 2000.0,
+      "status": "FAILED",
+      "bank_code": "91",
+      "rejection_reason": "BANK_TEMP_UNAVAILABLE",
+      "retry_eligible": true,
+      "created_at": "2026-04-13T12:24:15.057818",
+      "updated_at": "2026-04-13T12:24:15.057818",
+      "sip_date": "2026-04-13",
+      "issue_type": "PAYMENT_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000016",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN658L016",
+      "amount": 500.0,
+      "status": "FAILED",
+      "bank_code": "91",
+      "rejection_reason": "BANK_TEMP_UNAVAILABLE",
+      "retry_eligible": true,
+      "created_at": "2026-04-09T12:24:15.057836",
+      "updated_at": "2026-04-09T12:24:15.057836",
+      "sip_date": "2026-04-09",
+      "issue_type": "PAYMENT_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000017",
+      "customer_id": "ATUPN0386P",
+      "mandate_id": "MAN386P017",
+      "amount": 500.0,
+      "status": "SUCCESS",
+      "bank_code": null,
+      "rejection_reason": null,
+      "retry_eligible": false,
+      "created_at": "2026-04-13T12:24:15.057853",
+      "updated_at": "2026-04-13T12:24:15.057853",
+      "sip_date": "2026-04-13",
+      "issue_type": "SUCCESS"
+    },
+    {
+      "transaction_id": "TXN20260420000018",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R018",
+      "amount": 25000.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-04-09T12:24:15.057871",
+      "updated_at": "2026-04-09T12:24:15.057871",
+      "sip_date": "2026-04-09",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000019",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R019",
+      "amount": 10000.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-04-07T12:24:15.057889",
+      "updated_at": "2026-04-07T12:24:15.057889",
+      "sip_date": "2026-04-07",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000020",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN658L020",
+      "amount": 2000.0,
+      "status": "FAILED",
+      "bank_code": "91",
+      "rejection_reason": "BANK_TEMP_UNAVAILABLE",
+      "retry_eligible": true,
+      "created_at": "2026-03-29T12:24:15.057907",
+      "updated_at": "2026-03-29T12:24:15.057907",
+      "sip_date": "2026-03-29",
+      "issue_type": "PAYMENT_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000021",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN658L021",
+      "amount": 5000.0,
+      "status": "FAILED",
+      "bank_code": "54",
+      "rejection_reason": "MANDATE_EXPIRED",
+      "retry_eligible": false,
+      "created_at": "2026-04-07T12:24:15.057924",
+      "updated_at": "2026-04-07T12:24:15.057924",
+      "sip_date": "2026-04-07",
+      "issue_type": "MANDATE_EXPIRY"
+    },
+    {
+      "transaction_id": "TXN20260420000022",
+      "customer_id": "ATUPN0386P",
+      "mandate_id": "MAN386P022",
+      "amount": 5000.0,
+      "status": "FAILED",
+      "bank_code": "91",
+      "rejection_reason": "BANK_TEMP_UNAVAILABLE",
+      "retry_eligible": true,
+      "created_at": "2026-03-24T12:24:15.057944",
+      "updated_at": "2026-03-24T12:24:15.057944",
+      "sip_date": "2026-03-24",
+      "issue_type": "PAYMENT_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000023",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN658L023",
+      "amount": 2000.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-04-13T12:24:15.057961",
+      "updated_at": "2026-04-13T12:24:15.057961",
+      "sip_date": "2026-04-13",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000024",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R024",
+      "amount": 1000.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-03-25T12:24:15.058118",
+      "updated_at": "2026-03-25T12:24:15.058118",
+      "sip_date": "2026-03-25",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000025",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN658L025",
+      "amount": 500.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-04-13T12:24:15.058183",
+      "updated_at": "2026-04-13T12:24:15.058183",
+      "sip_date": "2026-04-13",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000026",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R026",
+      "amount": 10000.0,
+      "status": "FAILED",
+      "bank_code": "54",
+      "rejection_reason": "MANDATE_EXPIRED",
+      "retry_eligible": false,
+      "created_at": "2026-04-11T12:24:15.058206",
+      "updated_at": "2026-04-11T12:24:15.058206",
+      "sip_date": "2026-04-11",
+      "issue_type": "MANDATE_EXPIRY"
+    },
+    {
+      "transaction_id": "TXN20260420000027",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN658L027",
+      "amount": 25000.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-04-12T12:24:15.058230",
+      "updated_at": "2026-04-12T12:24:15.058230",
+      "sip_date": "2026-04-12",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000028",
+      "customer_id": "ATUPN0386P",
+      "mandate_id": "MAN386P028",
+      "amount": 25000.0,
+      "status": "FAILED",
+      "bank_code": "54",
+      "rejection_reason": "MANDATE_EXPIRED",
+      "retry_eligible": false,
+      "created_at": "2026-03-27T12:24:15.058248",
+      "updated_at": "2026-03-27T12:24:15.058248",
+      "sip_date": "2026-03-27",
+      "issue_type": "MANDATE_EXPIRY"
+    },
+    {
+      "transaction_id": "TXN20260420000029",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN658L029",
+      "amount": 5000.0,
+      "status": "FAILED",
+      "bank_code": "54",
+      "rejection_reason": "MANDATE_EXPIRED",
+      "retry_eligible": false,
+      "created_at": "2026-04-04T12:24:15.058269",
+      "updated_at": "2026-04-04T12:24:15.058269",
+      "sip_date": "2026-04-04",
+      "issue_type": "MANDATE_EXPIRY"
+    },
+    {
+      "transaction_id": "TXN20260420000030",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R030",
+      "amount": 5000.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-04-01T12:24:15.058286",
+      "updated_at": "2026-04-01T12:24:15.058286",
+      "sip_date": "2026-04-01",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000031",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R031",
+      "amount": 500.0,
+      "status": "FAILED",
+      "bank_code": "54",
+      "rejection_reason": "MANDATE_EXPIRED",
+      "retry_eligible": false,
+      "created_at": "2026-04-16T12:24:15.058306",
+      "updated_at": "2026-04-16T12:24:15.058306",
+      "sip_date": "2026-04-16",
+      "issue_type": "MANDATE_EXPIRY"
+    },
+    {
+      "transaction_id": "TXN20260420000032",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R032",
+      "amount": 2000.0,
+      "status": "SUCCESS",
+      "bank_code": null,
+      "rejection_reason": null,
+      "retry_eligible": false,
+      "created_at": "2026-04-14T12:24:15.058323",
+      "updated_at": "2026-04-14T12:24:15.058323",
+      "sip_date": "2026-04-14",
+      "issue_type": "SUCCESS"
+    },
+    {
+      "transaction_id": "TXN20260420000033",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN658L033",
+      "amount": 1000.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-04-10T12:24:15.058342",
+      "updated_at": "2026-04-10T12:24:15.058342",
+      "sip_date": "2026-04-10",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000034",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN658L034",
+      "amount": 5000.0,
+      "status": "FAILED",
+      "bank_code": "54",
+      "rejection_reason": "MANDATE_EXPIRED",
+      "retry_eligible": false,
+      "created_at": "2026-04-18T12:24:15.058360",
+      "updated_at": "2026-04-18T12:24:15.058360",
+      "sip_date": "2026-04-18",
+      "issue_type": "MANDATE_EXPIRY"
+    },
+    {
+      "transaction_id": "TXN20260420000035",
+      "customer_id": "ATUPN0386P",
+      "mandate_id": "MAN386P035",
+      "amount": 10000.0,
+      "status": "SUCCESS",
+      "bank_code": null,
+      "rejection_reason": null,
+      "retry_eligible": false,
+      "created_at": "2026-04-14T12:24:15.058380",
+      "updated_at": "2026-04-14T12:24:15.058380",
+      "sip_date": "2026-04-14",
+      "issue_type": "SUCCESS"
+    },
+    {
+      "transaction_id": "TXN20260420000036",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN658L036",
+      "amount": 10000.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-04-11T12:24:15.058398",
+      "updated_at": "2026-04-11T12:24:15.058398",
+      "sip_date": "2026-04-11",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000037",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R037",
+      "amount": 500.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-03-30T12:24:15.058417",
+      "updated_at": "2026-03-30T12:24:15.058417",
+      "sip_date": "2026-03-30",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000038",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN658L038",
+      "amount": 500.0,
+      "status": "FAILED",
+      "bank_code": "91",
+      "rejection_reason": "BANK_TEMP_UNAVAILABLE",
+      "retry_eligible": true,
+      "created_at": "2026-03-30T12:24:15.058435",
+      "updated_at": "2026-03-30T12:24:15.058435",
+      "sip_date": "2026-03-30",
+      "issue_type": "PAYMENT_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000039",
+      "customer_id": "ATUPN0386P",
+      "mandate_id": "MAN386P039",
+      "amount": 500.0,
+      "status": "FAILED",
+      "bank_code": "91",
+      "rejection_reason": "BANK_TEMP_UNAVAILABLE",
+      "retry_eligible": true,
+      "created_at": "2026-03-29T12:24:15.058452",
+      "updated_at": "2026-03-29T12:24:15.058452",
+      "sip_date": "2026-03-29",
+      "issue_type": "PAYMENT_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000040",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN658L040",
+      "amount": 1000.0,
+      "status": "FAILED",
+      "bank_code": "54",
+      "rejection_reason": "MANDATE_EXPIRED",
+      "retry_eligible": false,
+      "created_at": "2026-04-07T12:24:15.058469",
+      "updated_at": "2026-04-07T12:24:15.058469",
+      "sip_date": "2026-04-07",
+      "issue_type": "MANDATE_EXPIRY"
+    },
+    {
+      "transaction_id": "TXN20260420000041",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R041",
+      "amount": 500.0,
+      "status": "SUCCESS",
+      "bank_code": null,
+      "rejection_reason": null,
+      "retry_eligible": false,
+      "created_at": "2026-03-31T12:24:15.058486",
+      "updated_at": "2026-03-31T12:24:15.058486",
+      "sip_date": "2026-03-31",
+      "issue_type": "SUCCESS"
+    },
+    {
+      "transaction_id": "TXN20260420000042",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R042",
+      "amount": 500.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-03-31T12:24:15.058503",
+      "updated_at": "2026-03-31T12:24:15.058503",
+      "sip_date": "2026-03-31",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000043",
+      "customer_id": "ATUPN0386P",
+      "mandate_id": "MAN386P043",
+      "amount": 10000.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-04-11T12:24:15.058520",
+      "updated_at": "2026-04-11T12:24:15.058520",
+      "sip_date": "2026-04-11",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000044",
+      "customer_id": "ATUPN0386P",
+      "mandate_id": "MAN386P044",
+      "amount": 500.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-04-11T12:24:15.058537",
+      "updated_at": "2026-04-11T12:24:15.058537",
+      "sip_date": "2026-04-11",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000045",
+      "customer_id": "ATUPN0386P",
+      "mandate_id": "MAN386P045",
+      "amount": 500.0,
+      "status": "SUCCESS",
+      "bank_code": null,
+      "rejection_reason": null,
+      "retry_eligible": false,
+      "created_at": "2026-04-08T12:24:15.058554",
+      "updated_at": "2026-04-08T12:24:15.058554",
+      "sip_date": "2026-04-08",
+      "issue_type": "SUCCESS"
+    },
+    {
+      "transaction_id": "TXN20260420000046",
+      "customer_id": "ATUPN0386P",
+      "mandate_id": "MAN386P046",
+      "amount": 1000.0,
+      "status": "FAILED",
+      "bank_code": "91",
+      "rejection_reason": "BANK_TEMP_UNAVAILABLE",
+      "retry_eligible": true,
+      "created_at": "2026-04-19T12:24:15.058578",
+      "updated_at": "2026-04-19T12:24:15.058578",
+      "sip_date": "2026-04-19",
+      "issue_type": "PAYMENT_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000047",
+      "customer_id": "ATUPN0386P",
+      "mandate_id": "MAN386P047",
+      "amount": 500.0,
+      "status": "FAILED",
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "retry_eligible": true,
+      "created_at": "2026-04-04T12:24:15.058596",
+      "updated_at": "2026-04-04T12:24:15.058596",
+      "sip_date": "2026-04-04",
+      "issue_type": "SIP_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000048",
+      "customer_id": "ATUPN0386P",
+      "mandate_id": "MAN386P048",
+      "amount": 2000.0,
+      "status": "FAILED",
+      "bank_code": "91",
+      "rejection_reason": "BANK_TEMP_UNAVAILABLE",
+      "retry_eligible": true,
+      "created_at": "2026-03-24T12:24:15.058615",
+      "updated_at": "2026-03-24T12:24:15.058615",
+      "sip_date": "2026-03-24",
+      "issue_type": "PAYMENT_FAILURE"
+    },
+    {
+      "transaction_id": "TXN20260420000049",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN067R049",
+      "amount": 10000.0,
+      "status": "FAILED",
+      "bank_code": "54",
+      "rejection_reason": "MANDATE_EXPIRED",
+      "retry_eligible": false,
+      "created_at": "2026-03-24T12:24:15.058632",
+      "updated_at": "2026-03-24T12:24:15.058632",
+      "sip_date": "2026-03-24",
+      "issue_type": "MANDATE_EXPIRY"
+    }
+  ],
+  "mandates": [
+    {
+      "mandate_id": "MAN658L000",
+      "customer_id": "AHYPR8658L",
+      "status": "ACTIVE",
+      "expiry_date": "2029-03-10",
+      "created_at": "2023-12-18T12:24:15.057471",
+      "bank_name": "ICICI Bank",
+      "account_number": "XXXX5812"
+    },
+    {
+      "mandate_id": "MAN386P001",
+      "customer_id": "ATUPN0386P",
+      "status": "PENDING",
+      "expiry_date": "2028-12-18",
+      "created_at": "2025-01-13T12:24:15.057512",
+      "bank_name": "ICICI Bank",
+      "account_number": "XXXX8511"
+    },
+    {
+      "mandate_id": "MAN386P002",
+      "customer_id": "ATUPN0386P",
+      "status": "EXPIRED",
+      "expiry_date": "2026-04-15",
+      "created_at": "2023-06-06T12:24:15.057546",
+      "bank_name": "Kotak",
+      "account_number": "XXXX1842"
+    },
+    {
+      "mandate_id": "MAN658L003",
+      "customer_id": "AHYPR8658L",
+      "status": "EXPIRED",
+      "expiry_date": "2026-01-20",
+      "created_at": "2023-04-27T12:24:15.057570",
+      "bank_name": "SBI",
+      "account_number": "XXXX2258"
+    },
+    {
+      "mandate_id": "MAN658L004",
+      "customer_id": "AHYPR8658L",
+      "status": "PENDING",
+      "expiry_date": "2027-08-18",
+      "created_at": "2023-07-18T12:24:15.057591",
+      "bank_name": "Axis Bank",
+      "account_number": "XXXX6296"
+    },
+    {
+      "mandate_id": "MAN067R005",
+      "customer_id": "AKCPS3067R",
+      "status": "PENDING",
+      "expiry_date": "2028-02-10",
+      "created_at": "2024-01-14T12:24:15.057609",
+      "bank_name": "SBI",
+      "account_number": "XXXX7418"
+    },
+    {
+      "mandate_id": "MAN658L006",
+      "customer_id": "AHYPR8658L",
+      "status": "ACTIVE",
+      "expiry_date": "2027-10-28",
+      "created_at": "2023-06-20T12:24:15.057627",
+      "bank_name": "HDFC Bank",
+      "account_number": "XXXX1216"
+    },
+    {
+      "mandate_id": "MAN067R007",
+      "customer_id": "AKCPS3067R",
+      "status": "ACTIVE",
+      "expiry_date": "2027-11-18",
+      "created_at": "2024-12-05T12:24:15.057645",
+      "bank_name": "Axis Bank",
+      "account_number": "XXXX6570"
+    },
+    {
+      "mandate_id": "MAN067R008",
+      "customer_id": "AKCPS3067R",
+      "status": "ACTIVE",
+      "expiry_date": "2027-11-29",
+      "created_at": "2023-07-13T12:24:15.057662",
+      "bank_name": "Kotak",
+      "account_number": "XXXX7600"
+    },
+    {
+      "mandate_id": "MAN386P009",
+      "customer_id": "ATUPN0386P",
+      "status": "ACTIVE",
+      "expiry_date": "2028-10-11",
+      "created_at": "2024-04-18T12:24:15.057682",
+      "bank_name": "HDFC Bank",
+      "account_number": "XXXX1101"
+    },
+    {
+      "mandate_id": "MAN658L010",
+      "customer_id": "AHYPR8658L",
+      "status": "PENDING",
+      "expiry_date": "2027-11-10",
+      "created_at": "2024-10-10T12:24:15.057700",
+      "bank_name": "SBI",
+      "account_number": "XXXX5930"
+    },
+    {
+      "mandate_id": "MAN386P011",
+      "customer_id": "ATUPN0386P",
+      "status": "EXPIRED",
+      "expiry_date": "2026-03-11",
+      "created_at": "2025-03-11T12:24:15.057748",
+      "bank_name": "SBI",
+      "account_number": "XXXX6676"
+    },
+    {
+      "mandate_id": "MAN067R012",
+      "customer_id": "AKCPS3067R",
+      "status": "EXPIRED",
+      "expiry_date": "2026-02-10",
+      "created_at": "2024-09-05T12:24:15.057767",
+      "bank_name": "SBI",
+      "account_number": "XXXX7728"
+    },
+    {
+      "mandate_id": "MAN067R013",
+      "customer_id": "AKCPS3067R",
+      "status": "ACTIVE",
+      "expiry_date": "2028-08-12",
+      "created_at": "2024-06-15T12:24:15.057787",
+      "bank_name": "SBI",
+      "account_number": "XXXX6501"
+    },
+    {
+      "mandate_id": "MAN067R014",
+      "customer_id": "AKCPS3067R",
+      "status": "ACTIVE",
+      "expiry_date": "2028-01-31",
+      "created_at": "2023-12-22T12:24:15.057807",
+      "bank_name": "Kotak",
+      "account_number": "XXXX6294"
+    },
+    {
+      "mandate_id": "MAN067R015",
+      "customer_id": "AKCPS3067R",
+      "status": "PENDING",
+      "expiry_date": "2028-04-03",
+      "created_at": "2024-01-28T12:24:15.057824",
+      "bank_name": "SBI",
+      "account_number": "XXXX7654"
+    },
+    {
+      "mandate_id": "MAN658L016",
+      "customer_id": "AHYPR8658L",
+      "status": "ACTIVE",
+      "expiry_date": "2028-05-06",
+      "created_at": "2023-10-21T12:24:15.057842",
+      "bank_name": "Kotak",
+      "account_number": "XXXX1288"
+    },
+    {
+      "mandate_id": "MAN386P017",
+      "customer_id": "ATUPN0386P",
+      "status": "ACTIVE",
+      "expiry_date": "2028-04-13",
+      "created_at": "2024-01-20T12:24:15.057859",
+      "bank_name": "ICICI Bank",
+      "account_number": "XXXX2956"
+    },
+    {
+      "mandate_id": "MAN067R018",
+      "customer_id": "AKCPS3067R",
+      "status": "ACTIVE",
+      "expiry_date": "2028-10-15",
+      "created_at": "2024-10-14T12:24:15.057877",
+      "bank_name": "Axis Bank",
+      "account_number": "XXXX3885"
+    },
+    {
+      "mandate_id": "MAN067R019",
+      "customer_id": "AKCPS3067R",
+      "status": "ACTIVE",
+      "expiry_date": "2028-10-16",
+      "created_at": "2024-06-07T12:24:15.057895",
+      "bank_name": "Axis Bank",
+      "account_number": "XXXX3167"
+    },
+    {
+      "mandate_id": "MAN658L020",
+      "customer_id": "AHYPR8658L",
+      "status": "ACTIVE",
+      "expiry_date": "2028-07-21",
+      "created_at": "2025-03-06T12:24:15.057914",
+      "bank_name": "HDFC Bank",
+      "account_number": "XXXX1763"
+    },
+    {
+      "mandate_id": "MAN658L021",
+      "customer_id": "AHYPR8658L",
+      "status": "EXPIRED",
+      "expiry_date": "2026-03-01",
+      "created_at": "2024-08-23T12:24:15.057931",
+      "bank_name": "HDFC Bank",
+      "account_number": "XXXX7605"
+    },
+    {
+      "mandate_id": "MAN386P022",
+      "customer_id": "ATUPN0386P",
+      "status": "ACTIVE",
+      "expiry_date": "2027-09-02",
+      "created_at": "2024-01-01T12:24:15.057950",
+      "bank_name": "Kotak",
+      "account_number": "XXXX1391"
+    },
+    {
+      "mandate_id": "MAN658L023",
+      "customer_id": "AHYPR8658L",
+      "status": "ACTIVE",
+      "expiry_date": "2028-09-05",
+      "created_at": "2024-05-20T12:24:15.057968",
+      "bank_name": "Axis Bank",
+      "account_number": "XXXX8221"
+    },
+    {
+      "mandate_id": "MAN067R024",
+      "customer_id": "AKCPS3067R",
+      "status": "ACTIVE",
+      "expiry_date": "2028-08-06",
+      "created_at": "2024-08-19T12:24:15.058141",
+      "bank_name": "Kotak",
+      "account_number": "XXXX1414"
+    },
+    {
+      "mandate_id": "MAN658L025",
+      "customer_id": "AHYPR8658L",
+      "status": "ACTIVE",
+      "expiry_date": "2029-01-01",
+      "created_at": "2024-07-16T12:24:15.058191",
+      "bank_name": "HDFC Bank",
+      "account_number": "XXXX8780"
+    },
+    {
+      "mandate_id": "MAN067R026",
+      "customer_id": "AKCPS3067R",
+      "status": "EXPIRED",
+      "expiry_date": "2026-04-03",
+      "created_at": "2023-05-01T12:24:15.058216",
+      "bank_name": "SBI",
+      "account_number": "XXXX6498"
+    },
+    {
+      "mandate_id": "MAN658L027",
+      "customer_id": "AHYPR8658L",
+      "status": "PENDING",
+      "expiry_date": "2028-04-27",
+      "created_at": "2023-10-06T12:24:15.058237",
+      "bank_name": "ICICI Bank",
+      "account_number": "XXXX3729"
+    },
+    {
+      "mandate_id": "MAN386P028",
+      "customer_id": "ATUPN0386P",
+      "status": "EXPIRED",
+      "expiry_date": "2026-01-25",
+      "created_at": "2023-05-29T12:24:15.058255",
+      "bank_name": "SBI",
+      "account_number": "XXXX9023"
+    },
+    {
+      "mandate_id": "MAN658L029",
+      "customer_id": "AHYPR8658L",
+      "status": "EXPIRED",
+      "expiry_date": "2026-02-06",
+      "created_at": "2023-12-25T12:24:15.058275",
+      "bank_name": "ICICI Bank",
+      "account_number": "XXXX6652"
+    },
+    {
+      "mandate_id": "MAN067R030",
+      "customer_id": "AKCPS3067R",
+      "status": "ACTIVE",
+      "expiry_date": "2028-11-01",
+      "created_at": "2024-11-10T12:24:15.058294",
+      "bank_name": "Axis Bank",
+      "account_number": "XXXX3949"
+    },
+    {
+      "mandate_id": "MAN067R031",
+      "customer_id": "AKCPS3067R",
+      "status": "EXPIRED",
+      "expiry_date": "2026-03-20",
+      "created_at": "2023-09-08T12:24:15.058312",
+      "bank_name": "Axis Bank",
+      "account_number": "XXXX6486"
+    },
+    {
+      "mandate_id": "MAN067R032",
+      "customer_id": "AKCPS3067R",
+      "status": "ACTIVE",
+      "expiry_date": "2029-03-02",
+      "created_at": "2023-09-09T12:24:15.058330",
+      "bank_name": "HDFC Bank",
+      "account_number": "XXXX5954"
+    },
+    {
+      "mandate_id": "MAN658L033",
+      "customer_id": "AHYPR8658L",
+      "status": "ACTIVE",
+      "expiry_date": "2028-10-07",
+      "created_at": "2025-03-22T12:24:15.058348",
+      "bank_name": "ICICI Bank",
+      "account_number": "XXXX3776"
+    },
+    {
+      "mandate_id": "MAN658L034",
+      "customer_id": "AHYPR8658L",
+      "status": "EXPIRED",
+      "expiry_date": "2026-01-23",
+      "created_at": "2024-01-01T12:24:15.058365",
+      "bank_name": "HDFC Bank",
+      "account_number": "XXXX1828"
+    },
+    {
+      "mandate_id": "MAN386P035",
+      "customer_id": "ATUPN0386P",
+      "status": "PENDING",
+      "expiry_date": "2028-07-01",
+      "created_at": "2023-05-25T12:24:15.058387",
+      "bank_name": "Kotak",
+      "account_number": "XXXX9590"
+    },
+    {
+      "mandate_id": "MAN658L036",
+      "customer_id": "AHYPR8658L",
+      "status": "ACTIVE",
+      "expiry_date": "2028-01-22",
+      "created_at": "2024-01-11T12:24:15.058404",
+      "bank_name": "SBI",
+      "account_number": "XXXX6907"
+    },
+    {
+      "mandate_id": "MAN067R037",
+      "customer_id": "AKCPS3067R",
+      "status": "ACTIVE",
+      "expiry_date": "2028-09-13",
+      "created_at": "2024-09-26T12:24:15.058423",
+      "bank_name": "SBI",
+      "account_number": "XXXX7546"
+    },
+    {
+      "mandate_id": "MAN658L038",
+      "customer_id": "AHYPR8658L",
+      "status": "PENDING",
+      "expiry_date": "2028-07-11",
+      "created_at": "2024-07-27T12:24:15.058441",
+      "bank_name": "Kotak",
+      "account_number": "XXXX3389"
+    },
+    {
+      "mandate_id": "MAN386P039",
+      "customer_id": "ATUPN0386P",
+      "status": "ACTIVE",
+      "expiry_date": "2028-05-18",
+      "created_at": "2024-02-14T12:24:15.058458",
+      "bank_name": "SBI",
+      "account_number": "XXXX8531"
+    },
+    {
+      "mandate_id": "MAN658L040",
+      "customer_id": "AHYPR8658L",
+      "status": "EXPIRED",
+      "expiry_date": "2026-01-28",
+      "created_at": "2024-11-30T12:24:15.058475",
+      "bank_name": "ICICI Bank",
+      "account_number": "XXXX1315"
+    },
+    {
+      "mandate_id": "MAN067R041",
+      "customer_id": "AKCPS3067R",
+      "status": "ACTIVE",
+      "expiry_date": "2028-04-24",
+      "created_at": "2025-03-17T12:24:15.058492",
+      "bank_name": "ICICI Bank",
+      "account_number": "XXXX5917"
+    },
+    {
+      "mandate_id": "MAN067R042",
+      "customer_id": "AKCPS3067R",
+      "status": "ACTIVE",
+      "expiry_date": "2028-08-11",
+      "created_at": "2024-10-19T12:24:15.058509",
+      "bank_name": "ICICI Bank",
+      "account_number": "XXXX6027"
+    },
+    {
+      "mandate_id": "MAN386P043",
+      "customer_id": "ATUPN0386P",
+      "status": "ACTIVE",
+      "expiry_date": "2028-04-10",
+      "created_at": "2023-07-06T12:24:15.058526",
+      "bank_name": "Axis Bank",
+      "account_number": "XXXX5166"
+    },
+    {
+      "mandate_id": "MAN386P044",
+      "customer_id": "ATUPN0386P",
+      "status": "PENDING",
+      "expiry_date": "2027-11-20",
+      "created_at": "2023-05-26T12:24:15.058543",
+      "bank_name": "ICICI Bank",
+      "account_number": "XXXX3665"
+    },
+    {
+      "mandate_id": "MAN386P045",
+      "customer_id": "ATUPN0386P",
+      "status": "PENDING",
+      "expiry_date": "2027-07-23",
+      "created_at": "2024-11-29T12:24:15.058561",
+      "bank_name": "Kotak",
+      "account_number": "XXXX8472"
+    },
+    {
+      "mandate_id": "MAN386P046",
+      "customer_id": "ATUPN0386P",
+      "status": "ACTIVE",
+      "expiry_date": "2029-03-20",
+      "created_at": "2024-04-14T12:24:15.058585",
+      "bank_name": "Kotak",
+      "account_number": "XXXX5704"
+    },
+    {
+      "mandate_id": "MAN386P047",
+      "customer_id": "ATUPN0386P",
+      "status": "PENDING",
+      "expiry_date": "2027-08-31",
+      "created_at": "2025-03-09T12:24:15.058602",
+      "bank_name": "Kotak",
+      "account_number": "XXXX6610"
+    },
+    {
+      "mandate_id": "MAN386P048",
+      "customer_id": "ATUPN0386P",
+      "status": "PENDING",
+      "expiry_date": "2028-04-19",
+      "created_at": "2024-09-28T12:24:15.058621",
+      "bank_name": "HDFC Bank",
+      "account_number": "XXXX9371"
+    },
+    {
+      "mandate_id": "MAN067R049",
+      "customer_id": "AKCPS3067R",
+      "status": "EXPIRED",
+      "expiry_date": "2026-04-14",
+      "created_at": "2025-03-18T12:24:15.058638",
+      "bank_name": "HDFC Bank",
+      "account_number": "XXXX9616"
+    }
+  ],
+  "event_logs": [
+    {
+      "log_id": "LOGTXN2026042000000001",
+      "transaction_id": "TXN20260420000000",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-04T12:23:45.057451",
+      "message": "SIP transaction initiated for customer AHYPR8658L",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000002",
+      "transaction_id": "TXN20260420000000",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-04T12:23:55.057451",
+      "message": "Mandate MAN658L000 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000003",
+      "transaction_id": "TXN20260420000000",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-04T12:24:05.057451",
+      "message": "Sending debit request to bank for amount 500.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000004",
+      "transaction_id": "TXN20260420000000",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-04T12:24:15.057451",
+      "message": "Bank rejection - Code 91: BANK_TEMP_UNAVAILABLE",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000000005",
+      "transaction_id": "TXN20260420000000",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-04T12:24:20.057451",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000000101",
+      "transaction_id": "TXN20260420000001",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-09T12:23:45.057501",
+      "message": "SIP transaction initiated for customer ATUPN0386P",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000102",
+      "transaction_id": "TXN20260420000001",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-09T12:23:55.057501",
+      "message": "Mandate MAN386P001 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000103",
+      "transaction_id": "TXN20260420000001",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-09T12:24:05.057501",
+      "message": "Sending debit request to bank for amount 1000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000104",
+      "transaction_id": "TXN20260420000001",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-09T12:24:15.057501",
+      "message": "Bank approval received - Transaction successful",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000105",
+      "transaction_id": "TXN20260420000001",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-09T12:24:20.057501",
+      "message": "Transaction settled with status: SUCCESS",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000201",
+      "transaction_id": "TXN20260420000002",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-03-26T12:23:45.057530",
+      "message": "SIP transaction initiated for customer ATUPN0386P",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000202",
+      "transaction_id": "TXN20260420000002",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-03-26T12:23:55.057530",
+      "message": "Mandate MAN386P002 validation FAILED - EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000000203",
+      "transaction_id": "TXN20260420000002",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-03-26T12:24:05.057530",
+      "message": "Sending debit request to bank for amount 500.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000204",
+      "transaction_id": "TXN20260420000002",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-03-26T12:24:15.057530",
+      "message": "Bank rejection - Code 54: MANDATE_EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000000205",
+      "transaction_id": "TXN20260420000002",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-03-26T12:24:20.057530",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000000301",
+      "transaction_id": "TXN20260420000003",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-13T12:23:45.057563",
+      "message": "SIP transaction initiated for customer AHYPR8658L",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000302",
+      "transaction_id": "TXN20260420000003",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-13T12:23:55.057563",
+      "message": "Mandate MAN658L003 validation FAILED - EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000000303",
+      "transaction_id": "TXN20260420000003",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-13T12:24:05.057563",
+      "message": "Sending debit request to bank for amount 25000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000304",
+      "transaction_id": "TXN20260420000003",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-13T12:24:15.057563",
+      "message": "Bank rejection - Code 54: MANDATE_EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000000305",
+      "transaction_id": "TXN20260420000003",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-13T12:24:20.057563",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000000401",
+      "transaction_id": "TXN20260420000004",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-12T12:23:45.057584",
+      "message": "SIP transaction initiated for customer AHYPR8658L",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000402",
+      "transaction_id": "TXN20260420000004",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-12T12:23:55.057584",
+      "message": "Mandate MAN658L004 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000403",
+      "transaction_id": "TXN20260420000004",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-12T12:24:05.057584",
+      "message": "Sending debit request to bank for amount 10000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000404",
+      "transaction_id": "TXN20260420000004",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-12T12:24:15.057584",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000000405",
+      "transaction_id": "TXN20260420000004",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-12T12:24:20.057584",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000000501",
+      "transaction_id": "TXN20260420000005",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-08T12:23:45.057603",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000502",
+      "transaction_id": "TXN20260420000005",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-08T12:23:55.057603",
+      "message": "Mandate MAN067R005 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000503",
+      "transaction_id": "TXN20260420000005",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-08T12:24:05.057603",
+      "message": "Sending debit request to bank for amount 500.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000504",
+      "transaction_id": "TXN20260420000005",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-08T12:24:15.057603",
+      "message": "Bank rejection - Code 91: BANK_TEMP_UNAVAILABLE",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000000505",
+      "transaction_id": "TXN20260420000005",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-08T12:24:20.057603",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000000601",
+      "transaction_id": "TXN20260420000006",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-02T12:23:45.057621",
+      "message": "SIP transaction initiated for customer AHYPR8658L",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000602",
+      "transaction_id": "TXN20260420000006",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-02T12:23:55.057621",
+      "message": "Mandate MAN658L006 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000603",
+      "transaction_id": "TXN20260420000006",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-02T12:24:05.057621",
+      "message": "Sending debit request to bank for amount 1000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000604",
+      "transaction_id": "TXN20260420000006",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-02T12:24:15.057621",
+      "message": "Bank rejection - Code 91: BANK_TEMP_UNAVAILABLE",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000000605",
+      "transaction_id": "TXN20260420000006",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-02T12:24:20.057621",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000000701",
+      "transaction_id": "TXN20260420000007",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-03-29T12:23:45.057638",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000702",
+      "transaction_id": "TXN20260420000007",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-03-29T12:23:55.057638",
+      "message": "Mandate MAN067R007 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000703",
+      "transaction_id": "TXN20260420000007",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-03-29T12:24:05.057638",
+      "message": "Sending debit request to bank for amount 500.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000704",
+      "transaction_id": "TXN20260420000007",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-03-29T12:24:15.057638",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000000705",
+      "transaction_id": "TXN20260420000007",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-03-29T12:24:20.057638",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000000801",
+      "transaction_id": "TXN20260420000008",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-03-24T12:23:45.057656",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000802",
+      "transaction_id": "TXN20260420000008",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-03-24T12:23:55.057656",
+      "message": "Mandate MAN067R008 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000803",
+      "transaction_id": "TXN20260420000008",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-03-24T12:24:05.057656",
+      "message": "Sending debit request to bank for amount 5000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000804",
+      "transaction_id": "TXN20260420000008",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-03-24T12:24:15.057656",
+      "message": "Bank rejection - Code 91: BANK_TEMP_UNAVAILABLE",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000000805",
+      "transaction_id": "TXN20260420000008",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-03-24T12:24:20.057656",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000000901",
+      "transaction_id": "TXN20260420000009",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-11T12:23:45.057676",
+      "message": "SIP transaction initiated for customer ATUPN0386P",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000902",
+      "transaction_id": "TXN20260420000009",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-11T12:23:55.057676",
+      "message": "Mandate MAN386P009 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000903",
+      "transaction_id": "TXN20260420000009",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-11T12:24:05.057676",
+      "message": "Sending debit request to bank for amount 1000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000000904",
+      "transaction_id": "TXN20260420000009",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-11T12:24:15.057676",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000000905",
+      "transaction_id": "TXN20260420000009",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-11T12:24:20.057676",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000001001",
+      "transaction_id": "TXN20260420000010",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-03-24T12:23:45.057694",
+      "message": "SIP transaction initiated for customer AHYPR8658L",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001002",
+      "transaction_id": "TXN20260420000010",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-03-24T12:23:55.057694",
+      "message": "Mandate MAN658L010 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001003",
+      "transaction_id": "TXN20260420000010",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-03-24T12:24:05.057694",
+      "message": "Sending debit request to bank for amount 25000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001004",
+      "transaction_id": "TXN20260420000010",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-03-24T12:24:15.057694",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000001005",
+      "transaction_id": "TXN20260420000010",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-03-24T12:24:20.057694",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000001101",
+      "transaction_id": "TXN20260420000011",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-01T12:23:45.057711",
+      "message": "SIP transaction initiated for customer ATUPN0386P",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001102",
+      "transaction_id": "TXN20260420000011",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-01T12:23:55.057711",
+      "message": "Mandate MAN386P011 validation FAILED - EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000001103",
+      "transaction_id": "TXN20260420000011",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-01T12:24:05.057711",
+      "message": "Sending debit request to bank for amount 5000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001104",
+      "transaction_id": "TXN20260420000011",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-01T12:24:15.057711",
+      "message": "Bank rejection - Code 54: MANDATE_EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000001105",
+      "transaction_id": "TXN20260420000011",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-01T12:24:20.057711",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000001201",
+      "transaction_id": "TXN20260420000012",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-19T12:23:45.057761",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001202",
+      "transaction_id": "TXN20260420000012",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-19T12:23:55.057761",
+      "message": "Mandate MAN067R012 validation FAILED - EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000001203",
+      "transaction_id": "TXN20260420000012",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-19T12:24:05.057761",
+      "message": "Sending debit request to bank for amount 25000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001204",
+      "transaction_id": "TXN20260420000012",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-19T12:24:15.057761",
+      "message": "Bank rejection - Code 54: MANDATE_EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000001205",
+      "transaction_id": "TXN20260420000012",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-19T12:24:20.057761",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000001301",
+      "transaction_id": "TXN20260420000013",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-01T12:23:45.057778",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001302",
+      "transaction_id": "TXN20260420000013",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-01T12:23:55.057778",
+      "message": "Mandate MAN067R013 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001303",
+      "transaction_id": "TXN20260420000013",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-01T12:24:05.057778",
+      "message": "Sending debit request to bank for amount 10000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001304",
+      "transaction_id": "TXN20260420000013",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-01T12:24:15.057778",
+      "message": "Bank rejection - Code 91: BANK_TEMP_UNAVAILABLE",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000001305",
+      "transaction_id": "TXN20260420000013",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-01T12:24:20.057778",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000001401",
+      "transaction_id": "TXN20260420000014",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-19T12:23:45.057800",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001402",
+      "transaction_id": "TXN20260420000014",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-19T12:23:55.057800",
+      "message": "Mandate MAN067R014 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001403",
+      "transaction_id": "TXN20260420000014",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-19T12:24:05.057800",
+      "message": "Sending debit request to bank for amount 5000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001404",
+      "transaction_id": "TXN20260420000014",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-19T12:24:15.057800",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000001405",
+      "transaction_id": "TXN20260420000014",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-19T12:24:20.057800",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000001501",
+      "transaction_id": "TXN20260420000015",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-13T12:23:45.057818",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001502",
+      "transaction_id": "TXN20260420000015",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-13T12:23:55.057818",
+      "message": "Mandate MAN067R015 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001503",
+      "transaction_id": "TXN20260420000015",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-13T12:24:05.057818",
+      "message": "Sending debit request to bank for amount 2000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001504",
+      "transaction_id": "TXN20260420000015",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-13T12:24:15.057818",
+      "message": "Bank rejection - Code 91: BANK_TEMP_UNAVAILABLE",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000001505",
+      "transaction_id": "TXN20260420000015",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-13T12:24:20.057818",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000001601",
+      "transaction_id": "TXN20260420000016",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-09T12:23:45.057836",
+      "message": "SIP transaction initiated for customer AHYPR8658L",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001602",
+      "transaction_id": "TXN20260420000016",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-09T12:23:55.057836",
+      "message": "Mandate MAN658L016 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001603",
+      "transaction_id": "TXN20260420000016",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-09T12:24:05.057836",
+      "message": "Sending debit request to bank for amount 500.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001604",
+      "transaction_id": "TXN20260420000016",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-09T12:24:15.057836",
+      "message": "Bank rejection - Code 91: BANK_TEMP_UNAVAILABLE",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000001605",
+      "transaction_id": "TXN20260420000016",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-09T12:24:20.057836",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000001701",
+      "transaction_id": "TXN20260420000017",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-13T12:23:45.057853",
+      "message": "SIP transaction initiated for customer ATUPN0386P",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001702",
+      "transaction_id": "TXN20260420000017",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-13T12:23:55.057853",
+      "message": "Mandate MAN386P017 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001703",
+      "transaction_id": "TXN20260420000017",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-13T12:24:05.057853",
+      "message": "Sending debit request to bank for amount 500.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001704",
+      "transaction_id": "TXN20260420000017",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-13T12:24:15.057853",
+      "message": "Bank approval received - Transaction successful",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001705",
+      "transaction_id": "TXN20260420000017",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-13T12:24:20.057853",
+      "message": "Transaction settled with status: SUCCESS",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001801",
+      "transaction_id": "TXN20260420000018",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-09T12:23:45.057871",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001802",
+      "transaction_id": "TXN20260420000018",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-09T12:23:55.057871",
+      "message": "Mandate MAN067R018 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001803",
+      "transaction_id": "TXN20260420000018",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-09T12:24:05.057871",
+      "message": "Sending debit request to bank for amount 25000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001804",
+      "transaction_id": "TXN20260420000018",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-09T12:24:15.057871",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000001805",
+      "transaction_id": "TXN20260420000018",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-09T12:24:20.057871",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000001901",
+      "transaction_id": "TXN20260420000019",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-07T12:23:45.057889",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001902",
+      "transaction_id": "TXN20260420000019",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-07T12:23:55.057889",
+      "message": "Mandate MAN067R019 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001903",
+      "transaction_id": "TXN20260420000019",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-07T12:24:05.057889",
+      "message": "Sending debit request to bank for amount 10000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000001904",
+      "transaction_id": "TXN20260420000019",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-07T12:24:15.057889",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000001905",
+      "transaction_id": "TXN20260420000019",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-07T12:24:20.057889",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000002001",
+      "transaction_id": "TXN20260420000020",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-03-29T12:23:45.057907",
+      "message": "SIP transaction initiated for customer AHYPR8658L",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002002",
+      "transaction_id": "TXN20260420000020",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-03-29T12:23:55.057907",
+      "message": "Mandate MAN658L020 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002003",
+      "transaction_id": "TXN20260420000020",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-03-29T12:24:05.057907",
+      "message": "Sending debit request to bank for amount 2000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002004",
+      "transaction_id": "TXN20260420000020",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-03-29T12:24:15.057907",
+      "message": "Bank rejection - Code 91: BANK_TEMP_UNAVAILABLE",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000002005",
+      "transaction_id": "TXN20260420000020",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-03-29T12:24:20.057907",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000002101",
+      "transaction_id": "TXN20260420000021",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-07T12:23:45.057924",
+      "message": "SIP transaction initiated for customer AHYPR8658L",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002102",
+      "transaction_id": "TXN20260420000021",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-07T12:23:55.057924",
+      "message": "Mandate MAN658L021 validation FAILED - EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000002103",
+      "transaction_id": "TXN20260420000021",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-07T12:24:05.057924",
+      "message": "Sending debit request to bank for amount 5000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002104",
+      "transaction_id": "TXN20260420000021",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-07T12:24:15.057924",
+      "message": "Bank rejection - Code 54: MANDATE_EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000002105",
+      "transaction_id": "TXN20260420000021",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-07T12:24:20.057924",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000002201",
+      "transaction_id": "TXN20260420000022",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-03-24T12:23:45.057944",
+      "message": "SIP transaction initiated for customer ATUPN0386P",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002202",
+      "transaction_id": "TXN20260420000022",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-03-24T12:23:55.057944",
+      "message": "Mandate MAN386P022 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002203",
+      "transaction_id": "TXN20260420000022",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-03-24T12:24:05.057944",
+      "message": "Sending debit request to bank for amount 5000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002204",
+      "transaction_id": "TXN20260420000022",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-03-24T12:24:15.057944",
+      "message": "Bank rejection - Code 91: BANK_TEMP_UNAVAILABLE",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000002205",
+      "transaction_id": "TXN20260420000022",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-03-24T12:24:20.057944",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000002301",
+      "transaction_id": "TXN20260420000023",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-13T12:23:45.057961",
+      "message": "SIP transaction initiated for customer AHYPR8658L",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002302",
+      "transaction_id": "TXN20260420000023",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-13T12:23:55.057961",
+      "message": "Mandate MAN658L023 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002303",
+      "transaction_id": "TXN20260420000023",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-13T12:24:05.057961",
+      "message": "Sending debit request to bank for amount 2000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002304",
+      "transaction_id": "TXN20260420000023",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-13T12:24:15.057961",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000002305",
+      "transaction_id": "TXN20260420000023",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-13T12:24:20.057961",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000002401",
+      "transaction_id": "TXN20260420000024",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-03-25T12:23:45.058118",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002402",
+      "transaction_id": "TXN20260420000024",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-03-25T12:23:55.058118",
+      "message": "Mandate MAN067R024 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002403",
+      "transaction_id": "TXN20260420000024",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-03-25T12:24:05.058118",
+      "message": "Sending debit request to bank for amount 1000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002404",
+      "transaction_id": "TXN20260420000024",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-03-25T12:24:15.058118",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000002405",
+      "transaction_id": "TXN20260420000024",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-03-25T12:24:20.058118",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000002501",
+      "transaction_id": "TXN20260420000025",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-13T12:23:45.058183",
+      "message": "SIP transaction initiated for customer AHYPR8658L",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002502",
+      "transaction_id": "TXN20260420000025",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-13T12:23:55.058183",
+      "message": "Mandate MAN658L025 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002503",
+      "transaction_id": "TXN20260420000025",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-13T12:24:05.058183",
+      "message": "Sending debit request to bank for amount 500.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002504",
+      "transaction_id": "TXN20260420000025",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-13T12:24:15.058183",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000002505",
+      "transaction_id": "TXN20260420000025",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-13T12:24:20.058183",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000002601",
+      "transaction_id": "TXN20260420000026",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-11T12:23:45.058206",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002602",
+      "transaction_id": "TXN20260420000026",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-11T12:23:55.058206",
+      "message": "Mandate MAN067R026 validation FAILED - EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000002603",
+      "transaction_id": "TXN20260420000026",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-11T12:24:05.058206",
+      "message": "Sending debit request to bank for amount 10000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002604",
+      "transaction_id": "TXN20260420000026",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-11T12:24:15.058206",
+      "message": "Bank rejection - Code 54: MANDATE_EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000002605",
+      "transaction_id": "TXN20260420000026",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-11T12:24:20.058206",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000002701",
+      "transaction_id": "TXN20260420000027",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-12T12:23:45.058230",
+      "message": "SIP transaction initiated for customer AHYPR8658L",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002702",
+      "transaction_id": "TXN20260420000027",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-12T12:23:55.058230",
+      "message": "Mandate MAN658L027 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002703",
+      "transaction_id": "TXN20260420000027",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-12T12:24:05.058230",
+      "message": "Sending debit request to bank for amount 25000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002704",
+      "transaction_id": "TXN20260420000027",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-12T12:24:15.058230",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000002705",
+      "transaction_id": "TXN20260420000027",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-12T12:24:20.058230",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000002801",
+      "transaction_id": "TXN20260420000028",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-03-27T12:23:45.058248",
+      "message": "SIP transaction initiated for customer ATUPN0386P",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002802",
+      "transaction_id": "TXN20260420000028",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-03-27T12:23:55.058248",
+      "message": "Mandate MAN386P028 validation FAILED - EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000002803",
+      "transaction_id": "TXN20260420000028",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-03-27T12:24:05.058248",
+      "message": "Sending debit request to bank for amount 25000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002804",
+      "transaction_id": "TXN20260420000028",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-03-27T12:24:15.058248",
+      "message": "Bank rejection - Code 54: MANDATE_EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000002805",
+      "transaction_id": "TXN20260420000028",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-03-27T12:24:20.058248",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000002901",
+      "transaction_id": "TXN20260420000029",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-04T12:23:45.058269",
+      "message": "SIP transaction initiated for customer AHYPR8658L",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002902",
+      "transaction_id": "TXN20260420000029",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-04T12:23:55.058269",
+      "message": "Mandate MAN658L029 validation FAILED - EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000002903",
+      "transaction_id": "TXN20260420000029",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-04T12:24:05.058269",
+      "message": "Sending debit request to bank for amount 5000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000002904",
+      "transaction_id": "TXN20260420000029",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-04T12:24:15.058269",
+      "message": "Bank rejection - Code 54: MANDATE_EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000002905",
+      "transaction_id": "TXN20260420000029",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-04T12:24:20.058269",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000003001",
+      "transaction_id": "TXN20260420000030",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-01T12:23:45.058286",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003002",
+      "transaction_id": "TXN20260420000030",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-01T12:23:55.058286",
+      "message": "Mandate MAN067R030 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003003",
+      "transaction_id": "TXN20260420000030",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-01T12:24:05.058286",
+      "message": "Sending debit request to bank for amount 5000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003004",
+      "transaction_id": "TXN20260420000030",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-01T12:24:15.058286",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000003005",
+      "transaction_id": "TXN20260420000030",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-01T12:24:20.058286",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000003101",
+      "transaction_id": "TXN20260420000031",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-16T12:23:45.058306",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003102",
+      "transaction_id": "TXN20260420000031",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-16T12:23:55.058306",
+      "message": "Mandate MAN067R031 validation FAILED - EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000003103",
+      "transaction_id": "TXN20260420000031",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-16T12:24:05.058306",
+      "message": "Sending debit request to bank for amount 500.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003104",
+      "transaction_id": "TXN20260420000031",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-16T12:24:15.058306",
+      "message": "Bank rejection - Code 54: MANDATE_EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000003105",
+      "transaction_id": "TXN20260420000031",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-16T12:24:20.058306",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000003201",
+      "transaction_id": "TXN20260420000032",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-14T12:23:45.058323",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003202",
+      "transaction_id": "TXN20260420000032",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-14T12:23:55.058323",
+      "message": "Mandate MAN067R032 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003203",
+      "transaction_id": "TXN20260420000032",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-14T12:24:05.058323",
+      "message": "Sending debit request to bank for amount 2000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003204",
+      "transaction_id": "TXN20260420000032",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-14T12:24:15.058323",
+      "message": "Bank approval received - Transaction successful",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003205",
+      "transaction_id": "TXN20260420000032",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-14T12:24:20.058323",
+      "message": "Transaction settled with status: SUCCESS",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003301",
+      "transaction_id": "TXN20260420000033",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-10T12:23:45.058342",
+      "message": "SIP transaction initiated for customer AHYPR8658L",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003302",
+      "transaction_id": "TXN20260420000033",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-10T12:23:55.058342",
+      "message": "Mandate MAN658L033 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003303",
+      "transaction_id": "TXN20260420000033",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-10T12:24:05.058342",
+      "message": "Sending debit request to bank for amount 1000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003304",
+      "transaction_id": "TXN20260420000033",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-10T12:24:15.058342",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000003305",
+      "transaction_id": "TXN20260420000033",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-10T12:24:20.058342",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000003401",
+      "transaction_id": "TXN20260420000034",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-18T12:23:45.058360",
+      "message": "SIP transaction initiated for customer AHYPR8658L",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003402",
+      "transaction_id": "TXN20260420000034",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-18T12:23:55.058360",
+      "message": "Mandate MAN658L034 validation FAILED - EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000003403",
+      "transaction_id": "TXN20260420000034",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-18T12:24:05.058360",
+      "message": "Sending debit request to bank for amount 5000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003404",
+      "transaction_id": "TXN20260420000034",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-18T12:24:15.058360",
+      "message": "Bank rejection - Code 54: MANDATE_EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000003405",
+      "transaction_id": "TXN20260420000034",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-18T12:24:20.058360",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000003501",
+      "transaction_id": "TXN20260420000035",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-14T12:23:45.058380",
+      "message": "SIP transaction initiated for customer ATUPN0386P",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003502",
+      "transaction_id": "TXN20260420000035",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-14T12:23:55.058380",
+      "message": "Mandate MAN386P035 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003503",
+      "transaction_id": "TXN20260420000035",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-14T12:24:05.058380",
+      "message": "Sending debit request to bank for amount 10000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003504",
+      "transaction_id": "TXN20260420000035",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-14T12:24:15.058380",
+      "message": "Bank approval received - Transaction successful",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003505",
+      "transaction_id": "TXN20260420000035",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-14T12:24:20.058380",
+      "message": "Transaction settled with status: SUCCESS",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003601",
+      "transaction_id": "TXN20260420000036",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-11T12:23:45.058398",
+      "message": "SIP transaction initiated for customer AHYPR8658L",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003602",
+      "transaction_id": "TXN20260420000036",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-11T12:23:55.058398",
+      "message": "Mandate MAN658L036 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003603",
+      "transaction_id": "TXN20260420000036",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-11T12:24:05.058398",
+      "message": "Sending debit request to bank for amount 10000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003604",
+      "transaction_id": "TXN20260420000036",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-11T12:24:15.058398",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000003605",
+      "transaction_id": "TXN20260420000036",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-11T12:24:20.058398",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000003701",
+      "transaction_id": "TXN20260420000037",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-03-30T12:23:45.058417",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003702",
+      "transaction_id": "TXN20260420000037",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-03-30T12:23:55.058417",
+      "message": "Mandate MAN067R037 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003703",
+      "transaction_id": "TXN20260420000037",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-03-30T12:24:05.058417",
+      "message": "Sending debit request to bank for amount 500.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003704",
+      "transaction_id": "TXN20260420000037",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-03-30T12:24:15.058417",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000003705",
+      "transaction_id": "TXN20260420000037",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-03-30T12:24:20.058417",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000003801",
+      "transaction_id": "TXN20260420000038",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-03-30T12:23:45.058435",
+      "message": "SIP transaction initiated for customer AHYPR8658L",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003802",
+      "transaction_id": "TXN20260420000038",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-03-30T12:23:55.058435",
+      "message": "Mandate MAN658L038 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003803",
+      "transaction_id": "TXN20260420000038",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-03-30T12:24:05.058435",
+      "message": "Sending debit request to bank for amount 500.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003804",
+      "transaction_id": "TXN20260420000038",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-03-30T12:24:15.058435",
+      "message": "Bank rejection - Code 91: BANK_TEMP_UNAVAILABLE",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000003805",
+      "transaction_id": "TXN20260420000038",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-03-30T12:24:20.058435",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000003901",
+      "transaction_id": "TXN20260420000039",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-03-29T12:23:45.058452",
+      "message": "SIP transaction initiated for customer ATUPN0386P",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003902",
+      "transaction_id": "TXN20260420000039",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-03-29T12:23:55.058452",
+      "message": "Mandate MAN386P039 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003903",
+      "transaction_id": "TXN20260420000039",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-03-29T12:24:05.058452",
+      "message": "Sending debit request to bank for amount 500.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000003904",
+      "transaction_id": "TXN20260420000039",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-03-29T12:24:15.058452",
+      "message": "Bank rejection - Code 91: BANK_TEMP_UNAVAILABLE",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000003905",
+      "transaction_id": "TXN20260420000039",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-03-29T12:24:20.058452",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000004001",
+      "transaction_id": "TXN20260420000040",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-07T12:23:45.058469",
+      "message": "SIP transaction initiated for customer AHYPR8658L",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004002",
+      "transaction_id": "TXN20260420000040",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-07T12:23:55.058469",
+      "message": "Mandate MAN658L040 validation FAILED - EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000004003",
+      "transaction_id": "TXN20260420000040",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-07T12:24:05.058469",
+      "message": "Sending debit request to bank for amount 1000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004004",
+      "transaction_id": "TXN20260420000040",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-07T12:24:15.058469",
+      "message": "Bank rejection - Code 54: MANDATE_EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000004005",
+      "transaction_id": "TXN20260420000040",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-07T12:24:20.058469",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000004101",
+      "transaction_id": "TXN20260420000041",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-03-31T12:23:45.058486",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004102",
+      "transaction_id": "TXN20260420000041",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-03-31T12:23:55.058486",
+      "message": "Mandate MAN067R041 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004103",
+      "transaction_id": "TXN20260420000041",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-03-31T12:24:05.058486",
+      "message": "Sending debit request to bank for amount 500.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004104",
+      "transaction_id": "TXN20260420000041",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-03-31T12:24:15.058486",
+      "message": "Bank approval received - Transaction successful",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004105",
+      "transaction_id": "TXN20260420000041",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-03-31T12:24:20.058486",
+      "message": "Transaction settled with status: SUCCESS",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004201",
+      "transaction_id": "TXN20260420000042",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-03-31T12:23:45.058503",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004202",
+      "transaction_id": "TXN20260420000042",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-03-31T12:23:55.058503",
+      "message": "Mandate MAN067R042 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004203",
+      "transaction_id": "TXN20260420000042",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-03-31T12:24:05.058503",
+      "message": "Sending debit request to bank for amount 500.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004204",
+      "transaction_id": "TXN20260420000042",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-03-31T12:24:15.058503",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000004205",
+      "transaction_id": "TXN20260420000042",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-03-31T12:24:20.058503",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000004301",
+      "transaction_id": "TXN20260420000043",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-11T12:23:45.058520",
+      "message": "SIP transaction initiated for customer ATUPN0386P",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004302",
+      "transaction_id": "TXN20260420000043",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-11T12:23:55.058520",
+      "message": "Mandate MAN386P043 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004303",
+      "transaction_id": "TXN20260420000043",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-11T12:24:05.058520",
+      "message": "Sending debit request to bank for amount 10000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004304",
+      "transaction_id": "TXN20260420000043",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-11T12:24:15.058520",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000004305",
+      "transaction_id": "TXN20260420000043",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-11T12:24:20.058520",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000004401",
+      "transaction_id": "TXN20260420000044",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-11T12:23:45.058537",
+      "message": "SIP transaction initiated for customer ATUPN0386P",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004402",
+      "transaction_id": "TXN20260420000044",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-11T12:23:55.058537",
+      "message": "Mandate MAN386P044 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004403",
+      "transaction_id": "TXN20260420000044",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-11T12:24:05.058537",
+      "message": "Sending debit request to bank for amount 500.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004404",
+      "transaction_id": "TXN20260420000044",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-11T12:24:15.058537",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000004405",
+      "transaction_id": "TXN20260420000044",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-11T12:24:20.058537",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000004501",
+      "transaction_id": "TXN20260420000045",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-08T12:23:45.058554",
+      "message": "SIP transaction initiated for customer ATUPN0386P",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004502",
+      "transaction_id": "TXN20260420000045",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-08T12:23:55.058554",
+      "message": "Mandate MAN386P045 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004503",
+      "transaction_id": "TXN20260420000045",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-08T12:24:05.058554",
+      "message": "Sending debit request to bank for amount 500.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004504",
+      "transaction_id": "TXN20260420000045",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-08T12:24:15.058554",
+      "message": "Bank approval received - Transaction successful",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004505",
+      "transaction_id": "TXN20260420000045",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-08T12:24:20.058554",
+      "message": "Transaction settled with status: SUCCESS",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004601",
+      "transaction_id": "TXN20260420000046",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-19T12:23:45.058578",
+      "message": "SIP transaction initiated for customer ATUPN0386P",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004602",
+      "transaction_id": "TXN20260420000046",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-19T12:23:55.058578",
+      "message": "Mandate MAN386P046 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004603",
+      "transaction_id": "TXN20260420000046",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-19T12:24:05.058578",
+      "message": "Sending debit request to bank for amount 1000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004604",
+      "transaction_id": "TXN20260420000046",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-19T12:24:15.058578",
+      "message": "Bank rejection - Code 91: BANK_TEMP_UNAVAILABLE",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000004605",
+      "transaction_id": "TXN20260420000046",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-19T12:24:20.058578",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000004701",
+      "transaction_id": "TXN20260420000047",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-04-04T12:23:45.058596",
+      "message": "SIP transaction initiated for customer ATUPN0386P",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004702",
+      "transaction_id": "TXN20260420000047",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-04-04T12:23:55.058596",
+      "message": "Mandate MAN386P047 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004703",
+      "transaction_id": "TXN20260420000047",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-04-04T12:24:05.058596",
+      "message": "Sending debit request to bank for amount 500.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004704",
+      "transaction_id": "TXN20260420000047",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-04-04T12:24:15.058596",
+      "message": "Bank rejection - Code 51: INSUFFICIENT_FUNDS",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000004705",
+      "transaction_id": "TXN20260420000047",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-04-04T12:24:20.058596",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000004801",
+      "transaction_id": "TXN20260420000048",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-03-24T12:23:45.058615",
+      "message": "SIP transaction initiated for customer ATUPN0386P",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004802",
+      "transaction_id": "TXN20260420000048",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-03-24T12:23:55.058615",
+      "message": "Mandate MAN386P048 validated successfully",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004803",
+      "transaction_id": "TXN20260420000048",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-03-24T12:24:05.058615",
+      "message": "Sending debit request to bank for amount 2000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004804",
+      "transaction_id": "TXN20260420000048",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-03-24T12:24:15.058615",
+      "message": "Bank rejection - Code 91: BANK_TEMP_UNAVAILABLE",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000004805",
+      "transaction_id": "TXN20260420000048",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-03-24T12:24:20.058615",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    },
+    {
+      "log_id": "LOGTXN2026042000004901",
+      "transaction_id": "TXN20260420000049",
+      "log_type": "transaction_initiated",
+      "timestamp": "2026-03-24T12:23:45.058632",
+      "message": "SIP transaction initiated for customer AKCPS3067R",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004902",
+      "transaction_id": "TXN20260420000049",
+      "log_type": "mandate_validation",
+      "timestamp": "2026-03-24T12:23:55.058632",
+      "message": "Mandate MAN067R049 validation FAILED - EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000004903",
+      "transaction_id": "TXN20260420000049",
+      "log_type": "payment_gateway_request",
+      "timestamp": "2026-03-24T12:24:05.058632",
+      "message": "Sending debit request to bank for amount 10000.0",
+      "level": "INFO"
+    },
+    {
+      "log_id": "LOGTXN2026042000004904",
+      "transaction_id": "TXN20260420000049",
+      "log_type": "payment_gateway_response",
+      "timestamp": "2026-03-24T12:24:15.058632",
+      "message": "Bank rejection - Code 54: MANDATE_EXPIRED",
+      "level": "ERROR"
+    },
+    {
+      "log_id": "LOGTXN2026042000004905",
+      "transaction_id": "TXN20260420000049",
+      "log_type": "transaction_settlement",
+      "timestamp": "2026-03-24T12:24:20.058632",
+      "message": "Transaction settled with status: FAILED",
+      "level": "WARN"
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-04-20T12:24:15.058677",
+    "count": {
+      "transactions": 50,
+      "mandates": 50,
+      "logs": 250
+    }
+  }
+}

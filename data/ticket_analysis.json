@@ -1,0 +1,78 @@
+{
+  "tickets": [
+    {
+      "key": "NOC-11734",
+      "issue_type": "MANDATE_ISSUE",
+      "customer_id": "AKCPS3067R",
+      "summary": "AKCPS3067R - Mandate issue",
+      "status": "Done",
+      "created": "2024-08-23T13:06:03.286+0530",
+      "resolved": "2024-08-26T14:01:20.692+0530",
+      "comments_count": 4,
+      "resolution_patterns": [
+        "BANK_REJECTION"
+      ],
+      "description": "Hi Team,\r\n\r\n\r\nThe client is trying to activate the mandate via net banking as well as\r\nUPI.\r\n\r\nIt's throwing an error message \" *Invalid Account No*\"\r\n\r\nKindly look into it.\r\n\r\nPFA of bank proof for r..."
+    },
+    {
+      "key": "NOC-1346",
+      "issue_type": "SIP_FAILURE",
+      "customer_id": "ATUPN0386P",
+      "summary": "Payment failure",
+      "status": "Done",
+      "created": "2023-04-03T11:04:00.567+0530",
+      "resolved": "2023-04-03T18:19:30.705+0530",
+      "comments_count": 5,
+      "resolution_patterns": [],
+      "description": "Investor not able to transaction in\u00a0 all alert SIP.Name :\u00a0\nHimani Negi\n\nPAN:\u00a0\nATUPN0386P\n\nMail id:\u00a0\nhimani.negi59@gmail.com\n\n\n\nInline images:\nhttps://desk.zoho.com:443/support/ImageDisplay?downloadTyp..."
+    },
+    {
+      "key": "NOC-21854",
+      "issue_type": "SIP_FAILURE",
+      "customer_id": "AHYPR8658L",
+      "summary": "AHYPR8658L- SIP failure reason",
+      "status": "Done",
+      "created": "2025-07-05T14:49:04.341+0530",
+      "resolved": "2025-07-07T10:25:56.623+0530",
+      "comments_count": 1,
+      "resolution_patterns": [],
+      "description": "Hi team\r\nThe investor has two active SIPs for Axis ELSS Tax Saver Fund-Reg(G), which did not process for the month of June. Kindly confirm us the reason for the SIP failure.\r\n "
+    }
+  ],
+  "issue_types": {
+    "MANDATE_ISSUE": 1,
+    "SIP_FAILURE": 2
+  },
+  "mock_patterns": [
+    {
+      "type": "MANDATE_EXPIRY",
+      "customer_id": "AKCPS3067R",
+      "mandate_id": "MAN755",
+      "transaction_id": "TXN193113",
+      "amount": 10000.0,
+      "bank_code": "54",
+      "rejection_reason": "MANDATE_EXPIRED",
+      "resolution": "RENEW_MANDATE"
+    },
+    {
+      "type": "SIP_FAILURE",
+      "customer_id": "ATUPN0386P",
+      "mandate_id": "MAN1164",
+      "transaction_id": "TXN26306",
+      "amount": 5000.0,
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "resolution": "RETRY_NEXT_DAY"
+    },
+    {
+      "type": "SIP_FAILURE",
+      "customer_id": "AHYPR8658L",
+      "mandate_id": "MAN7646",
+      "transaction_id": "TXN481239",
+      "amount": 5000.0,
+      "bank_code": "51",
+      "rejection_reason": "INSUFFICIENT_FUNDS",
+      "resolution": "RETRY_NEXT_DAY"
+    }
+  ]
+}
