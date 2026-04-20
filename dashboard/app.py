@@ -411,7 +411,7 @@ with tab_run:
                         f"<span class='tool-pill'>{t.get('tool','?')}</span>" for t in tools
                     )
                     st.markdown(pills, unsafe_allow_html=True)
-                with st.expander("Raw JSON"):
+                if st.toggle("Show raw JSON", key=f"raw_{item['ticket_key']}_{idx}"):
                     st.json(r)
 
 # --------------------------------------------------------------
