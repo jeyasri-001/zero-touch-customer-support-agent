@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5022",
+    "fields": {
+      "summary": "ABYPS2412H - KYC activated but portal shows inactive",
+      "description": "KYC team activated client ABYPS2412H but portal still shows account as inactive. RM escalated.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5022",
+    "summary": "Client Onboarding - KYC activated but portal shows inactive",
+    "description": "KYC team activated client ABYPS2412H but portal still shows account as inactive. RM escalated.",
+    "status": "Done",
+    "root_cause": "KYC_SYNC_DELAY",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5022",
+        "body": "KYC activation confirmed by CAMS. Portal sync delay ~2h. Manual refresh triggered by ops.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

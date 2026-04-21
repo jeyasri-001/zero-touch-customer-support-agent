@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5020",
+    "fields": {
+      "summary": "UYZAB8901T - SIP amount wrong different from registered amount",
+      "description": "SIP of Rs 10000 deducted instead of Rs 5000.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5020",
+    "summary": "UYZAB8901T - SIP amount wrong different from registered amount",
+    "description": "SIP of Rs 10000 deducted instead of Rs 5000.",
+    "status": "Done",
+    "root_cause": "SYSTEM_ERROR",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5020",
+        "body": "System error caused incorrect amount field mapping in SIP instruction. Transaction reversed. SIP amount corrected in system to Rs 5000. Escalated to engineering for root fix.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

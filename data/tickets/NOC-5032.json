@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5032",
+    "fields": {
+      "summary": "HNMRQ3312S - ECS mandate expired SIP bouncing",
+      "description": "Customer SIP not processing since last 2 months. Mandate may have expired.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5032",
+    "summary": "HNMRQ3312S - ECS mandate expired SIP bouncing",
+    "description": "Customer SIP not processing since last 2 months. Mandate may have expired.",
+    "status": "Done",
+    "root_cause": "MANDATE_EXPIRY",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5032",
+        "body": "Mandate expired Jan 2026. Customer asked to renew via net banking. New registration initiated.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

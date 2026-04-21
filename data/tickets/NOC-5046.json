@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5046",
+    "fields": {
+      "summary": "HIJKL9012M - Portal login error after password reset",
+      "description": "Customer reset password but portal shows Authentication Failed on login.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5046",
+    "summary": "HIJKL9012M - Portal login error after password reset",
+    "description": "Customer reset password but portal shows Authentication Failed on login.",
+    "status": "Done",
+    "root_cause": "SYSTEM_ERROR",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5046",
+        "body": "Session token not invalidated post-reset. Backend team cleared stale session. Login restored.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

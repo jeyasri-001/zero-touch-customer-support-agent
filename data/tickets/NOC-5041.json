@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5041",
+    "fields": {
+      "summary": "IJKLM8901P - Bank account mismatch during mandate setup",
+      "description": "Customer mandate rejected by bank. Account holder name does not match bank records.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5041",
+    "summary": "IJKLM8901P - Bank account mismatch during mandate setup",
+    "description": "Customer mandate rejected by bank. Account holder name does not match bank records.",
+    "status": "Done",
+    "root_cause": "ACCOUNT_VALIDATION_ERROR",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5041",
+        "body": "Name mismatch (maiden vs married name). Customer submitted bank letter. Re-registered.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

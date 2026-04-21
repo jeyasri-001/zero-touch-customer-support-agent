@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5047",
+    "fields": {
+      "summary": "MNOPQ3456N - Transaction history not loading portal stuck",
+      "description": "Customer cannot see transaction history. Page spins endlessly. Tried 3 browsers.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5047",
+    "summary": "MNOPQ3456N - Transaction history not loading portal stuck",
+    "description": "Customer cannot see transaction history. Page spins endlessly. Tried 3 browsers.",
+    "status": "Done",
+    "root_cause": "SYSTEM_ERROR",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5047",
+        "body": "Elasticsearch index corrupted for this customer segment. Reindexed. History visible again.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5017",
+    "fields": {
+      "summary": "RVWXY6789Q - NAV not updated after successful payment",
+      "description": "Customer panicking \u2014 money gone but investment not showing.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5017",
+    "summary": "RVWXY6789Q - NAV not updated after successful payment",
+    "description": "Customer panicking \u2014 money gone but investment not showing.",
+    "status": "Done",
+    "root_cause": "AMC_DELAY",
+    "action_taken": "WAIT_FOR_AMC"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5017",
+        "body": "AMC system maintenance window caused 24-hour delay in NAV allocation. Payment_received: true, nav_allocated: false in AMC status. Customer reassured. Units reflected after maintenance window.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

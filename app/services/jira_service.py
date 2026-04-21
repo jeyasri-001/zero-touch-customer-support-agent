@@ -10,12 +10,27 @@ from typing import Optional
 
 class JiraService:
     """Service for interacting with Jira API"""
-    
+
     def __init__(self):
         self.base_url = os.getenv("JIRA_BASE_URL", "https://fundsindia.atlassian.net")
         self.email = os.getenv("JIRA_EMAIL")
         self.api_token = os.getenv("JIRA_API_TOKEN")
         self.enabled = bool(self.email and self.api_token)
+
+    def download_attachment(self, content_url: str) -> Optional[bytes]:
+        """Download a Jira attachment by its content URL and return raw bytes."""
+        if not self.enabled:
+            return None
+        try:
+            response = requests.get(
+                content_url,
+                auth=HTTPBasicAuth(self.email, self.api_token),
+                timeout=30
+            )
+            return response.content if response.status_code == 200 else None
+        except Exception as e:
+            print(f"⚠️ Failed to download attachment: {e}")
+            return None
     
     async def add_comment(self, ticket_key: str, comment: str) -> bool:
         """Add a comment to a Jira ticket"""
@@ -73,12 +88,26 @@ class JiraService:
             pan_match = re.search(r"\b([A-Z]{5}\d{4}[A-Z])\b", f"{summary} {description}")
             customer_id = pan_match.group(1) if pan_match else None
 
+            # Extract image attachments
+            raw_attachments = fields.get("attachment", [])
+            attachments = [
+                {
+                    "id": a["id"],
+                    "filename": a["filename"],
+                    "content_url": a["content"],
+                    "mime_type": a.get("mimeType", ""),
+                }
+                for a in raw_attachments
+                if a.get("mimeType", "").startswith("image/")
+            ]
+
             return {
                 "ticket_key": ticket_key,
                 "summary": summary,
                 "description": description,
                 "status": status,
                 "customer_id": customer_id,
+                "attachments": attachments,
             }
         except Exception as e:
             print(f"❌ Error fetching issue {ticket_key}: {e}")

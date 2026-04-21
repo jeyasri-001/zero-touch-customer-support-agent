@@ -22,6 +22,8 @@ from datetime import datetime
 
 from app.agents.langchain_agent import SupportAgent
 from app.services.jira_service import JiraService
+from app.services.vision_service import get_vision_service
+from app.services.rag_service import get_rag_service
 from data.mock_database import get_db
 
 app = FastAPI(
@@ -52,6 +54,7 @@ class TicketRequest(BaseModel):
     description: Optional[str] = ""
     customer_id: Optional[str] = None
     status: str = "Open"
+    ground_truth_root_cause: Optional[str] = None  # For evaluation: the known correct root cause
 
 
 class TicketResponse(BaseModel):
@@ -68,10 +71,13 @@ class MetricsResponse(BaseModel):
     total_processed: int
     correct_diagnoses: int
     accuracy: float
+    accuracy_basis: str  # "ground_truth" or "confidence_proxy"
+    evaluated_tickets: int  # how many had a ground_truth label
     auto_resolved: int
     escalated: int
     avg_time: float
     root_causes: Dict[str, int]
+    per_root_cause_accuracy: Dict[str, Any]
     recent_tickets: List[Dict[str, Any]]
 
 
@@ -116,6 +122,22 @@ async def process_ticket(request: TicketRequest, update_jira: bool = True):
         end_time = datetime.now()
         processing_time = (end_time - start_time).total_seconds()
         
+        # RAG write-back: index successfully resolved tickets so future queries learn from them
+        if result.get("status") == "RESOLVED":
+            try:
+                rag = get_rag_service()
+                rag.index_resolved_ticket(
+                    ticket_key=request.ticket_key,
+                    summary=request.summary,
+                    description=request.description or "",
+                    root_cause=result["root_cause"],
+                    action_taken=result["action_taken"],
+                    action_result=result.get("action_result", ""),
+                    diagnosis=result["diagnosis"],
+                )
+            except Exception as e:
+                print(f"⚠️ RAG write-back failed (non-blocking): {e}")
+
         # AUTO-UPDATE JIRA (per plan: add comment + change status)
         if update_jira and request.ticket_key.startswith("NOC-"):
             try:
@@ -125,10 +147,18 @@ async def process_ticket(request: TicketRequest, update_jira: bool = True):
             except Exception as e:
                 print(f"⚠️ Jira update failed (non-blocking): {e}")
         
-        # Store metrics
+        # Store metrics — include ground truth if provided for real accuracy calculation
+        ground_truth = request.ground_truth_root_cause
+        predicted = result["root_cause"]
+        correct = (
+            ground_truth is not None
+            and predicted.upper() == ground_truth.upper()
+        )
         metrics_store["processed"].append({
             "ticket_key": request.ticket_key,
-            "root_cause": result["root_cause"],
+            "root_cause": predicted,
+            "ground_truth_root_cause": ground_truth,
+            "correct": correct if ground_truth else None,
             "confidence": result["confidence"],
             "processing_time": processing_time,
             "timestamp": end_time.isoformat(),
@@ -151,29 +181,39 @@ async def process_ticket(request: TicketRequest, update_jira: bool = True):
 
 
 def _format_jira_comment(result: dict) -> str:
-    """Format agent result as a Jira comment"""
+    """Format agent result as a clean Jira comment for ops team."""
     confidence_pct = f"{result['confidence']:.0%}"
-    validation = result.get("validation", {})
-    validation_status = "✅ Validated" if validation.get("passed") else "⚠️ Validation Flagged"
-    
-    return f"""🤖 *Zero-Touch Agent Analysis*
+    status = result['status']
+    status_icon = {"RESOLVED": "✅", "PENDING_FOLLOW_UP": "🕐", "ESCALATED": "🔺", "ERROR": "❌"}.get(status, "ℹ️")
+
+    tools_used = [tc["tool"] for tc in result.get("tool_calls_made", [])]
+    tools_str = ", ".join(tools_used) if tools_used else "none"
+
+    comment = f"""🤖 *Zero-Touch Agent Analysis*
 
 *Root Cause:* {result['root_cause']}
 *Confidence:* {confidence_pct}
-*Status:* {result['status']}
-*Validation:* {validation_status}
+*Status:* {status_icon} {status}
 
 *Diagnosis:*
-{result['diagnosis']}
+{result['diagnosis']}"""
 
-*Action Taken:* {result['action_taken']}
-*Result:* {result.get('action_result', 'N/A')}
+    action = result.get('action_taken', '')
+    action_result = result.get('action_result', '')
+    if action and action != "ESCALATE_TO_HUMAN":
+        comment += f"\n\n*Action Taken:* {action}"
+    if action_result and "Validation blocked" not in action_result and action_result != "N/A":
+        comment += f"\n*Result:* {action_result}"
+
+    comment += f"""
 
 *Customer Response Draft:*
 {result['customer_response']}
 
 ---
-_Processed by Zero-Touch Agent (Groq Llama 3.3 70B) - {len(result.get('tool_calls_made', []))} tool calls in {result.get('iterations', 0)} iterations_"""
+_Zero-Touch Agent | Tools used: {tools_str}_"""
+
+    return comment
 
 
 @app.post("/api/process-by-key/{ticket_key}", response_model=TicketResponse)
@@ -184,10 +224,25 @@ async def process_by_key(ticket_key: str, update_jira: bool = True):
     if not issue:
         raise HTTPException(status_code=404, detail=f"Could not fetch {ticket_key} from Jira")
 
+    description = issue.get("description") or ""
+
+    # Enrich description with context extracted from image attachments
+    attachments = issue.get("attachments", [])
+    if attachments:
+        vision = get_vision_service()
+        if vision:
+            image_context = vision.extract_context_from_attachments(
+                attachments=attachments,
+                download_fn=jira_service.download_attachment
+            )
+            if image_context:
+                description = description + "\n\n" + image_context
+                print(f"🖼️ Vision context added for {ticket_key} ({len(attachments)} image(s))")
+
     ticket_request = TicketRequest(
         ticket_key=issue["ticket_key"],
         summary=issue["summary"],
-        description=issue["description"],
+        description=description,
         customer_id=issue.get("customer_id"),
         status=issue.get("status", "Open"),
     )
@@ -293,9 +348,12 @@ async def _process_batch_background(job_id: str, tickets: List[TicketRequest]):
     
     for i, ticket in enumerate(tickets):
         try:
-            # Space out requests to avoid rate limits (Groq free tier: 12K tokens/min)
+            # Space out requests to avoid rate limits.
+            # Free tier: ~6K tokens/min, each ticket ~9K tokens → need ~90s gap.
+            # Paid tier: set GROQ_BATCH_DELAY=5 in .env to run faster.
             if i > 0:
-                await asyncio.sleep(10)  # 10s between tickets
+                batch_delay = int(os.getenv("GROQ_BATCH_DELAY", "90"))
+                await asyncio.sleep(batch_delay)
             
             result = await process_ticket(ticket)
             jobs_store[job_id]["results"].append({
@@ -355,31 +413,64 @@ async def get_metrics():
             total_processed=0,
             correct_diagnoses=0,
             accuracy=0.0,
+            accuracy_basis="ground_truth",
+            evaluated_tickets=0,
             auto_resolved=0,
             escalated=0,
             avg_time=0.0,
             root_causes={},
+            per_root_cause_accuracy={},
             recent_tickets=[]
         )
-    
-    # Calculate root cause distribution
-    root_causes = {}
+
+    # Root cause distribution
+    root_causes: Dict[str, int] = {}
     for p in processed:
         rc = p.get("root_cause", "UNKNOWN")
         root_causes[rc] = root_causes.get(rc, 0) + 1
-    
-    # Calculate metrics (simulate accuracy based on confidence > 0.7)
-    correct = sum(1 for p in processed if p.get("confidence", 0) > 0.7)
-    
+
+    # Real accuracy from ground-truth labels where available
+    evaluated = [p for p in processed if p.get("ground_truth_root_cause") is not None]
+    evaluated_count = len(evaluated)
+
+    if evaluated_count > 0:
+        correct = sum(1 for p in evaluated if p.get("correct") is True)
+        accuracy = correct / evaluated_count
+        accuracy_basis = "ground_truth"
+
+        # Per-root-cause breakdown
+        per_rc: Dict[str, Any] = {}
+        for p in evaluated:
+            gt = p["ground_truth_root_cause"].upper()
+            if gt not in per_rc:
+                per_rc[gt] = {"total": 0, "correct": 0, "accuracy": 0.0}
+            per_rc[gt]["total"] += 1
+            if p.get("correct"):
+                per_rc[gt]["correct"] += 1
+        for rc_data in per_rc.values():
+            rc_data["accuracy"] = rc_data["correct"] / rc_data["total"]
+    else:
+        # Fall back to confidence proxy — clearly labelled as such
+        correct = sum(1 for p in processed if p.get("confidence", 0) > 0.7)
+        accuracy = correct / total
+        accuracy_basis = "confidence_proxy"
+        per_rc = {}
+
     return MetricsResponse(
         total_processed=total,
         correct_diagnoses=correct,
-        accuracy=correct / total if total > 0 else 0.0,
-        auto_resolved=sum(1 for p in processed if "retry" in str(p.get("action_taken", "")).lower()),
-        escalated=sum(1 for p in processed if "escalate" in str(p.get("action_taken", "")).lower()),
-        avg_time=sum(p.get("processing_time", 0) for p in processed) / total if total > 0 else 0.0,
+        accuracy=accuracy,
+        accuracy_basis=accuracy_basis,
+        evaluated_tickets=evaluated_count,
+        auto_resolved=sum(
+            1 for p in processed
+            if any(k in str(p.get("action_taken", "")).upper() for k in ("RETRY", "RETRIGGER"))
+        ),
+        escalated=sum(1 for p in processed if "ESCALATE" in str(p.get("action_taken", "")).upper()),
+        avg_time=sum(p.get("processing_time", 0) for p in processed) / total,
         root_causes=root_causes,
-        recent_tickets=processed[-10:]  # Last 10 tickets
+        per_root_cause_accuracy=per_rc,
+        recent_tickets=processed[-10:]
     )
 
 

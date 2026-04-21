@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5001",
+    "fields": {
+      "summary": "BKJPS1234A - SIP failed insufficient funds",
+      "description": "Customer SIP of Rs 5000 failed. Bank returned rejection.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5001",
+    "summary": "BKJPS1234A - SIP failed insufficient funds",
+    "description": "Customer SIP of Rs 5000 failed. Bank returned rejection.",
+    "status": "Done",
+    "root_cause": "BANK_REJECTION",
+    "action_taken": "RETRY_EXECUTED"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5001",
+        "body": "Investigated transaction TXN20240601000001. Event log showed bank rejection code 51 (Insufficient Funds). Customer account balance was below SIP amount. Executed payment retry after customer confirmed funds added. Retry successful.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

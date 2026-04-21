@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5006",
+    "fields": {
+      "summary": "GKLMN2345F - SIP failed mandate expired",
+      "description": "Customer's SIP failing for 2 months. Mandate issue.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5006",
+    "summary": "GKLMN2345F - SIP failed mandate expired",
+    "description": "Customer's SIP failing for 2 months. Mandate issue.",
+    "status": "Done",
+    "root_cause": "MANDATE_EXPIRY",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5006",
+        "body": "check_mandate_status confirmed mandate status EXPIRED (expiry date 2024-01-15). Bank rejection code 54. Customer informed to register new mandate via net banking.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

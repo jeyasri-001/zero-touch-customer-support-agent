@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5045",
+    "fields": {
+      "summary": "CDEFG5678L - SIP units missing portfolio not updated",
+      "description": "Monthly SIP of Rs 8000. Bank shows debit. FundsIndia shows failed. Portfolio unchanged.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5045",
+    "summary": "CDEFG5678L - SIP units missing portfolio not updated",
+    "description": "Monthly SIP of Rs 8000. Bank shows debit. FundsIndia shows failed. Portfolio unchanged.",
+    "status": "Done",
+    "root_cause": "AMC_DELAY",
+    "action_taken": "WAIT_FOR_AMC"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5045",
+        "body": "CAMS queue delayed due to high NAV computation load. Units allotted next business day.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

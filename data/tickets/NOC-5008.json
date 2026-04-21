@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5008",
+    "fields": {
+      "summary": "IMNOP0123H - NACH mandate not active SIP bounce",
+      "description": "ICICI bank mandate expired. Customer unable to invest.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5008",
+    "summary": "IMNOP0123H - NACH mandate not active SIP bounce",
+    "description": "ICICI bank mandate expired. Customer unable to invest.",
+    "status": "Done",
+    "root_cause": "MANDATE_EXPIRY",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5008",
+        "body": "Bank rejection code 54 confirmed. Mandate expired 2024-03-01. Escalated to customer to complete mandate renewal via net banking/UPI.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

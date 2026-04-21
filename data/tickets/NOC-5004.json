@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5004",
+    "fields": {
+      "summary": "EHJKL3456D - SIP failed bank temporarily unavailable",
+      "description": "SIP failed despite sufficient balance. Bank system down.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5004",
+    "summary": "EHJKL3456D - SIP failed bank temporarily unavailable",
+    "description": "SIP failed despite sufficient balance. Bank system down.",
+    "status": "Done",
+    "root_cause": "BANK_REJECTION",
+    "action_taken": "RETRY_EXECUTED"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5004",
+        "body": "Bank rejection code 91 (Bank Temporarily Unavailable). Retried 2 hours later. Transaction processed successfully.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

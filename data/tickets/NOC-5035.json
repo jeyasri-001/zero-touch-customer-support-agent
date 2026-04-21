@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5035",
+    "fields": {
+      "summary": "DVNWQ6678Y - Multiple SIP failures mandate expired",
+      "description": "Three SIPs failing since February. Bank returns NACH error on all debit attempts.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5035",
+    "summary": "DVNWQ6678Y - Multiple SIP failures mandate expired",
+    "description": "Three SIPs failing since February. Bank returns NACH error on all debit attempts.",
+    "status": "Done",
+    "root_cause": "MANDATE_EXPIRY",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5035",
+        "body": "All three mandates expired same date. Bulk re-registration submitted. ETA 3-5 working days.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

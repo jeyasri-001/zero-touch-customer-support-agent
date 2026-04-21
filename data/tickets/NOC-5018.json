@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5018",
+    "fields": {
+      "summary": "SWXYZ0123R - Transaction stuck in processing state",
+      "description": "Transaction showing processing for 5 days. Not failed not success.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5018",
+    "summary": "SWXYZ0123R - Transaction stuck in processing state",
+    "description": "Transaction showing processing for 5 days. Not failed not success.",
+    "status": "Done",
+    "root_cause": "SYSTEM_ERROR",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5018",
+        "body": "Internal processing queue stuck. Event logs showed transaction_settlement never received response. Engineering team cleared the queue manually. Transaction reprocessed successfully.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

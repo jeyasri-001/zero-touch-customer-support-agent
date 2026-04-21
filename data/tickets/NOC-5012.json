@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5012",
+    "fields": {
+      "summary": "MQRST6789L - Mandate activation failing invalid account",
+      "description": "Customer unable to activate mandate. Error: Invalid Account No.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5012",
+    "summary": "MQRST6789L - Mandate activation failing invalid account",
+    "description": "Customer unable to activate mandate. Error: Invalid Account No.",
+    "status": "Done",
+    "root_cause": "ACCOUNT_VALIDATION_ERROR",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5012",
+        "body": "check_account_validation_history showed Axis Bank account number mismatch: expected 15-16 digits, received 10. Axis Bank requires leading zeros. Data team fixed account number by padding with leading zeros.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

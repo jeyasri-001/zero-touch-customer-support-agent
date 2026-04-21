@@ -127,6 +127,50 @@ class RAGService:
             print(f"RAG query error: {e}")
             return []
     
+    def index_resolved_ticket(
+        self,
+        ticket_key: str,
+        summary: str,
+        description: str,
+        root_cause: str,
+        action_taken: str,
+        action_result: str,
+        diagnosis: str,
+    ) -> bool:
+        """
+        Write a newly resolved ticket back to ChromaDB so future queries benefit from it.
+        Called automatically after every successful auto-resolution.
+        """
+        try:
+            existing = self.collection.get(ids=[ticket_key])
+            if existing and existing.get("ids"):
+                return False  # Already indexed
+
+            resolution_text = (
+                f"Root cause: {root_cause}. "
+                f"Action: {action_taken}. "
+                f"Result: {action_result}. "
+                f"Diagnosis: {diagnosis}"
+            )
+            content = f"Summary: {summary}\nDescription: {description}\nResolution: {resolution_text}"
+
+            self.collection.add(
+                ids=[ticket_key],
+                documents=[content],
+                metadatas=[{
+                    "ticket_key": ticket_key,
+                    "summary": summary[:200],
+                    "status": "Done",
+                    "root_cause": root_cause,
+                    "resolution_preview": resolution_text[:500],
+                }]
+            )
+            print(f"  📚 RAG: Indexed resolved ticket {ticket_key}")
+            return True
+        except Exception as e:
+            print(f"  ⚠️ RAG write-back failed for {ticket_key}: {e}")
+            return False
+
     def get_stats(self) -> Dict[str, Any]:
         """Get RAG index stats"""
         return {

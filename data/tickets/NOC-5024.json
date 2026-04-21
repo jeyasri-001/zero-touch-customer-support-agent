@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5024",
+    "fields": {
+      "summary": "New client HRTNK4567F KYC done but cannot login",
+      "description": "Client completed KYC via DigiLocker. Portal activation pending. Client unable to place orders.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5024",
+    "summary": "New client HRTNK4567F KYC done but cannot login",
+    "description": "Client completed KYC via DigiLocker. Portal activation pending. Client unable to place orders.",
+    "status": "Done",
+    "root_cause": "KYC_SYNC_DELAY",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5024",
+        "body": "DigiLocker KYC OK. Registration event not propagated to portal DB. Backend team notified.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

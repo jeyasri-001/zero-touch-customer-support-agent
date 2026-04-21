@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5009",
+    "fields": {
+      "summary": "JNOPQ4567I - SIP not processed for June customer complaint",
+      "description": "Customer says June SIP did not process. Balance was sufficient.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5009",
+    "summary": "JNOPQ4567I - SIP not processed for June customer complaint",
+    "description": "Customer says June SIP did not process. Balance was sufficient.",
+    "status": "Done",
+    "root_cause": "SIP_PAUSED",
+    "action_taken": "RETRIGGER_EXECUTED"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5009",
+        "body": "check_sip_pause_status revealed SIP was paused via editSystematicPlanSip (pauseMonth:1) by ops team on customer request received 30th May. SIP retriggered and processed for next cycle.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

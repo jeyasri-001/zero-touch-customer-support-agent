@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5023",
+    "fields": {
+      "summary": "CRPLM7823K - CRPLM7823K account not visible after KYC approval",
+      "description": "Investor KYC approved by CDSL. Account not showing in FundsIndia portal 24h later.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5023",
+    "summary": "Client Onboarding - CRPLM7823K account not visible after KYC approval",
+    "description": "Investor KYC approved by CDSL. Account not showing in FundsIndia portal 24h later.",
+    "status": "Done",
+    "root_cause": "KYC_SYNC_DELAY",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5023",
+        "body": "CDSL approval received. Portal sync job missed this PAN. Ops triggered manual re-sync.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

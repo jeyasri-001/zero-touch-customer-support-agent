@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5043",
+    "fields": {
+      "summary": "STUVW6789J - Payment deducted but units not reflecting",
+      "description": "SIP amount debited from bank but no units shown in portfolio. Rs 15000 Parag Parikh.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5043",
+    "summary": "STUVW6789J - Payment deducted but units not reflecting",
+    "description": "SIP amount debited from bank but no units shown in portfolio. Rs 15000 Parag Parikh.",
+    "status": "Done",
+    "root_cause": "AMC_DELAY",
+    "action_taken": "WAIT_FOR_AMC"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5043",
+        "body": "Payment confirmed at RTA. AMC processing queue delayed by 2 business days. Auto-resolved.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

@@ -58,7 +58,27 @@ def build_langchain_tools(agent_tools):
     def search_similar_past_tickets(issue_description: str) -> str:
         """RAG search: Find semantically similar PAST RESOLVED tickets using vector search. Use to learn from how similar issues were resolved before."""
         return agent_tools.search_similar_past_tickets(issue_description)
-    
+
+    @tool
+    def execute_sip_retrigger(customer_id: str) -> str:
+        """AUTO-RESOLUTION: Re-trigger a paused SIP — re-submits to the exchange queue. Only use when check_sip_pause_status confirms retrigger_eligible is true."""
+        return agent_tools.execute_sip_retrigger(customer_id)
+
+    @tool
+    def check_sip_pause_status(customer_id: str) -> str:
+        """Check if the customer's SIP has been paused by the ops team or system. Use when SIP transactions are not submitted to exchange despite an active mandate."""
+        return agent_tools.check_sip_pause_status(customer_id)
+
+    @tool
+    def check_account_validation_history(customer_id: str) -> str:
+        """Check bank account validation errors for mandate registration failures. Use when error messages mention 'Invalid Account No' or account number issues."""
+        return agent_tools.check_account_validation_history(customer_id)
+
+    @tool
+    def check_amc_processing_status(transaction_id: str) -> str:
+        """Check AMC-side processing status when payment was accepted by bank but NAV is not yet allocated. Use for pending transactions where bank confirms debit but investment is not reflected."""
+        return agent_tools.check_amc_processing_status(transaction_id)
+
     return [
         get_customer_transactions,
         get_transaction_details,
@@ -69,4 +89,8 @@ def build_langchain_tools(agent_tools):
         check_sip_schedule,
         get_customer_contact_history,
         search_similar_past_tickets,
+        execute_sip_retrigger,
+        check_sip_pause_status,
+        check_account_validation_history,
+        check_amc_processing_status,
     ]

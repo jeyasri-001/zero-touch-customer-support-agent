@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5007",
+    "fields": {
+      "summary": "HLMNO6789G - ECS mandate expired SIP not processing",
+      "description": "All SIPs stopped. Mandate validation failing.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5007",
+    "summary": "HLMNO6789G - ECS mandate expired SIP not processing",
+    "description": "All SIPs stopped. Mandate validation failing.",
+    "status": "Done",
+    "root_cause": "MANDATE_EXPIRY",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5007",
+        "body": "Mandate expired 3 months ago (code 54). Customer guided to renew mandate through bank portal. SIPs resumed after new mandate registered.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

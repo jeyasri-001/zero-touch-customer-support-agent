@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5002",
+    "fields": {
+      "summary": "CKTRS5678B - Monthly SIP deduction failed code 51",
+      "description": "SIP Rs 2000 for HDFC Flexi Cap failed. Customer asking for reason.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5002",
+    "summary": "CKTRS5678B - Monthly SIP deduction failed code 51",
+    "description": "SIP Rs 2000 for HDFC Flexi Cap failed. Customer asking for reason.",
+    "status": "Done",
+    "root_cause": "BANK_REJECTION",
+    "action_taken": "RETRY_EXECUTED"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5002",
+        "body": "Bank rejection code 51 confirmed via get_bank_rejection_code. Customer salary credited next day. Payment retried successfully on second attempt.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

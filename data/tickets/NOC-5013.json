@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5013",
+    "fields": {
+      "summary": "NRSTU0123M - UPI mandate error account number mismatch",
+      "description": "Mandate registration via net banking and UPI both failing.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5013",
+    "summary": "NRSTU0123M - UPI mandate error account number mismatch",
+    "description": "Mandate registration via net banking and UPI both failing.",
+    "status": "Done",
+    "root_cause": "ACCOUNT_VALIDATION_ERROR",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5013",
+        "body": "Validation error: account number captured with 12 digits, Kotak Mahindra Bank requires 16 digits. Corrected in system after customer provided full account number via WhatsApp.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5021",
+    "fields": {
+      "summary": "VZABC2345U - Customer reports SIP issue no further details",
+      "description": "Customer called saying SIP is not working. No transaction ID provided.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5021",
+    "summary": "VZABC2345U - Customer reports SIP issue no further details",
+    "description": "Customer called saying SIP is not working. No transaction ID provided.",
+    "status": "Done",
+    "root_cause": "UNKNOWN",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5021",
+        "body": "Insufficient information to diagnose. No transaction found for reported date. Customer contacted for more details \u2014 PAN and transaction reference requested. Escalated for follow-up.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

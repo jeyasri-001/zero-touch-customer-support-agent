@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5036",
+    "fields": {
+      "summary": "LMNOP3456Q - SIP not submitted to exchange this month",
+      "description": "Customer portfolio not updated. SIP should have processed on 10th but no units allotted.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5036",
+    "summary": "LMNOP3456Q - SIP not submitted to exchange this month",
+    "description": "Customer portfolio not updated. SIP should have processed on 10th but no units allotted.",
+    "status": "Done",
+    "root_cause": "SIP_PAUSED",
+    "action_taken": "RETRIGGER_EXECUTED"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5036",
+        "body": "SIP paused by ops team for system migration. Retrigger executed. Units allotted next NAV date.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

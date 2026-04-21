@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5028",
+    "fields": {
+      "summary": "QRSMN1209D - Payment deducted but SIP shows failed",
+      "description": "Customer says amount debited but SIP transaction shows failed in portal. Rs 7500.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5028",
+    "summary": "QRSMN1209D - Payment deducted but SIP shows failed",
+    "description": "Customer says amount debited but SIP transaction shows failed in portal. Rs 7500.",
+    "status": "Done",
+    "root_cause": "BANK_REJECTION",
+    "action_taken": "RETRY_EXECUTED"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5028",
+        "body": "Bank ACK delayed. Code 91 from SBI gateway. Duplicate check passed. Retry logged as success.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

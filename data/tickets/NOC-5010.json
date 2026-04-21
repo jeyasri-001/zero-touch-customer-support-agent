@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5010",
+    "fields": {
+      "summary": "KOPQR8901J - Two SIPs skipped Axis ELSS fund",
+      "description": "Investor asking why SIP skipped for 2 months in a row.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5010",
+    "summary": "KOPQR8901J - Two SIPs skipped Axis ELSS fund",
+    "description": "Investor asking why SIP skipped for 2 months in a row.",
+    "status": "Done",
+    "root_cause": "SIP_PAUSED",
+    "action_taken": "RETRIGGER_EXECUTED"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5010",
+        "body": "Event logs showed sip_submission_skipped for both months. check_sip_pause_status confirmed pause was set by ops team. SIP retriggered successfully after customer confirmed resumption.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

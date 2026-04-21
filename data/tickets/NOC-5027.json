@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5027",
+    "fields": {
+      "summary": "PLRTX8823B - SIP failed bank server timeout",
+      "description": "SIP of Rs 3000 failed. Customer says bank is fine. Rejection happened overnight.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5027",
+    "summary": "PLRTX8823B - SIP failed bank server timeout",
+    "description": "SIP of Rs 3000 failed. Customer says bank is fine. Rejection happened overnight.",
+    "status": "Done",
+    "root_cause": "BANK_REJECTION",
+    "action_taken": "RETRY_EXECUTED"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5027",
+        "body": "Bank returned code 91 (Bank Temporarily Unavailable). Retry at 6 AM next day succeeded.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

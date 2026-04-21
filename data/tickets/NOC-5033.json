@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5033",
+    "fields": {
+      "summary": "FQLKM8890V - NACH mandate registration failed code 54",
+      "description": "NACH registration returned error. SIP payments failing with code 54.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5033",
+    "summary": "FQLKM8890V - NACH mandate registration failed code 54",
+    "description": "NACH registration returned error. SIP payments failing with code 54.",
+    "status": "Done",
+    "root_cause": "MANDATE_EXPIRY",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5033",
+        "body": "Code 54 = Expired Mandate. Prior mandate expired, renewal request submitted to NPCI.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

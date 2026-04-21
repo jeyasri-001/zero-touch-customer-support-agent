@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5003",
+    "fields": {
+      "summary": "DFGTR9012C - SIP bounce insufficient balance",
+      "description": "Two consecutive SIP failures for same customer. Axis ELSS fund.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5003",
+    "summary": "DFGTR9012C - SIP bounce insufficient balance",
+    "description": "Two consecutive SIP failures for same customer. Axis ELSS fund.",
+    "status": "Done",
+    "root_cause": "BANK_REJECTION",
+    "action_taken": "RETRY_EXECUTED"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5003",
+        "body": "Bank rejection code 51 on both transactions. Customer notified to maintain minimum balance before SIP date. Next attempt succeeded.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

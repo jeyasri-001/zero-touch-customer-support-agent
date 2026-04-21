@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5015",
+    "fields": {
+      "summary": "PTUVW8901O - SIP deducted but units not allocated",
+      "description": "Money deducted from bank 3 days ago. No units shown in portfolio.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5015",
+    "summary": "PTUVW8901O - SIP deducted but units not allocated",
+    "description": "Money deducted from bank 3 days ago. No units shown in portfolio.",
+    "status": "Done",
+    "root_cause": "AMC_DELAY",
+    "action_taken": "WAIT_FOR_AMC"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5015",
+        "body": "check_amc_processing_status confirmed: bank debit successful, NAV allocation pending at AMC due to month-end high volume. Units allocated within 48 hours. Customer notified to wait.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

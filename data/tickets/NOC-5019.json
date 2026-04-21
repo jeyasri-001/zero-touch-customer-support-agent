@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5019",
+    "fields": {
+      "summary": "TXYZA4567S - Duplicate SIP deduction same month",
+      "description": "SIP deducted twice in same month. Customer requesting refund.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5019",
+    "summary": "TXYZA4567S - Duplicate SIP deduction same month",
+    "description": "SIP deducted twice in same month. Customer requesting refund.",
+    "status": "Done",
+    "root_cause": "SYSTEM_ERROR",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5019",
+        "body": "Duplicate transaction detected in event logs \u2014 race condition in SIP scheduler. Second deduction reversed by ops team. Customer refunded within 3 working days.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

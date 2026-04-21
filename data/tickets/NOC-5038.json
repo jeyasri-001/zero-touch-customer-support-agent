@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5038",
+    "fields": {
+      "summary": "GHIJK2345M - Units not submitted two months running",
+      "description": "SIP of Rs 5000 Nippon India Largecap not processed for Feb and March.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5038",
+    "summary": "GHIJK2345M - Units not submitted two months running",
+    "description": "SIP of Rs 5000 Nippon India Largecap not processed for Feb and March.",
+    "status": "Done",
+    "root_cause": "SIP_PAUSED",
+    "action_taken": "RETRIGGER_EXECUTED"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5038",
+        "body": "Pause flag set by automated risk engine. Cleared after review. Both missed SIPs retriggered.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

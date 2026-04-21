@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5034",
+    "fields": {
+      "summary": "KPRTZ2201X - SIP not going through mandate issue",
+      "description": "All SIPs stopped for this customer since March. Mandate registration was in Jan 2025.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5034",
+    "summary": "KPRTZ2201X - SIP not going through mandate issue",
+    "description": "All SIPs stopped for this customer since March. Mandate registration was in Jan 2025.",
+    "status": "Done",
+    "root_cause": "MANDATE_EXPIRY",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5034",
+        "body": "Mandate expired after 12-month limit. Fresh mandate required. Customer guidance sent.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

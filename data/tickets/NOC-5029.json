@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5029",
+    "fields": {
+      "summary": "WKRTP5567G - HDFC bank down during processing",
+      "description": "Batch SIP run on 5th failed for 3 customers including WKRTP5567G. HDFC maintenance window.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5029",
+    "summary": "SIP failed for WKRTP5567G - HDFC bank down during processing",
+    "description": "Batch SIP run on 5th failed for 3 customers including WKRTP5567G. HDFC maintenance window.",
+    "status": "Done",
+    "root_cause": "BANK_REJECTION",
+    "action_taken": "RETRY_EXECUTED"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5029",
+        "body": "HDFC maintenance 2-4 AM caused code 91 rejections. Retry queued for 8 AM, all passed.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

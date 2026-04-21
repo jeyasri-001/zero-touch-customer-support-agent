@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5042",
+    "fields": {
+      "summary": "NOPQR2345C - Account validation failed multiple attempts",
+      "description": "Three attempts to register NACH mandate. All returning validation error. Bank: Kotak.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5042",
+    "summary": "NOPQR2345C - Account validation failed multiple attempts",
+    "description": "Three attempts to register NACH mandate. All returning validation error. Bank: Kotak.",
+    "status": "Done",
+    "root_cause": "ACCOUNT_VALIDATION_ERROR",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5042",
+        "body": "Kotak IFSC changed post-branch merger. Updated IFSC in system. Mandate registration passed.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

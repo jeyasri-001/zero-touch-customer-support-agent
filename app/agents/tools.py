@@ -98,6 +98,42 @@ class AgentTools:
         history = self.db.get_customer_contact_history(customer_id)
         return json.dumps(history)
     
+    def execute_sip_retrigger(self, customer_id: str) -> str:
+        """
+        Tool: AUTO-RESOLUTION: Re-trigger a paused SIP for a customer.
+        Args: customer_id (str) - Customer PAN/ID
+        Returns: JSON string with retrigger result
+        """
+        result = self.db.execute_sip_retrigger(customer_id)
+        return json.dumps(result)
+
+    def check_sip_pause_status(self, customer_id: str) -> str:
+        """
+        Tool 10: Check if customer's SIP has been paused by the system or ops team
+        Args: customer_id (str) - Customer PAN/ID
+        Returns: JSON string with pause status and retrigger eligibility
+        """
+        result = self.db.get_sip_pause_status(customer_id)
+        return json.dumps(result)
+
+    def check_account_validation_history(self, customer_id: str) -> str:
+        """
+        Tool 11: Check bank account validation errors for mandate registration failures
+        Args: customer_id (str) - Customer PAN/ID
+        Returns: JSON string with validation errors and recommended fix
+        """
+        result = self.db.get_account_validation_history(customer_id)
+        return json.dumps(result)
+
+    def check_amc_processing_status(self, transaction_id: str) -> str:
+        """
+        Tool 12: Check AMC-side processing status for transactions pending NAV allocation
+        Args: transaction_id (str) - Transaction ID where payment was accepted but NAV not allocated
+        Returns: JSON string with AMC queue status and estimated resolution time
+        """
+        result = self.db.get_amc_processing_status(transaction_id)
+        return json.dumps(result)
+
     def search_similar_past_tickets(self, issue_description: str) -> str:
         """
         Tool 9: RAG - Search semantically similar Done tickets from ChromaDB
@@ -245,6 +281,62 @@ class AgentTools:
                         "required": ["issue_description"]
                     }
                 }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "execute_sip_retrigger",
+                    "description": "AUTO-RESOLUTION: Re-trigger a paused SIP — re-submits to exchange queue. Only use when check_sip_pause_status returns retrigger_eligible: true.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "customer_id": {"type": "string", "description": "Customer PAN or ID"}
+                        },
+                        "required": ["customer_id"]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "check_sip_pause_status",
+                    "description": "Check if the customer's SIP has been paused by the ops team or system. Use when SIP transactions are not submitted to exchange despite active mandate.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "customer_id": {"type": "string", "description": "Customer PAN or ID"}
+                        },
+                        "required": ["customer_id"]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "check_account_validation_history",
+                    "description": "Check bank account validation errors for this customer. Use when mandate registration fails with account number errors or 'Invalid Account No' messages.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "customer_id": {"type": "string", "description": "Customer PAN or ID"}
+                        },
+                        "required": ["customer_id"]
+                    }
+                }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "check_amc_processing_status",
+                    "description": "Check AMC-side processing status when payment was accepted by bank but NAV is not yet allocated. Use for pending transactions where bank confirms debit but investment not reflected.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "transaction_id": {"type": "string", "description": "Transaction ID with accepted payment but pending NAV allocation"}
+                        },
+                        "required": ["transaction_id"]
+                    }
+                }
             }
         ]
     
@@ -260,6 +352,10 @@ class AgentTools:
             "check_sip_schedule": self.check_sip_schedule,
             "get_customer_contact_history": self.get_customer_contact_history,
             "search_similar_past_tickets": self.search_similar_past_tickets,
+            "execute_sip_retrigger": self.execute_sip_retrigger,
+            "check_sip_pause_status": self.check_sip_pause_status,
+            "check_account_validation_history": self.check_account_validation_history,
+            "check_amc_processing_status": self.check_amc_processing_status,
         }
         
         if tool_name not in tool_map:

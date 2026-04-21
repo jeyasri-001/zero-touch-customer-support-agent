@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5031",
+    "fields": {
+      "summary": "ZXCVB7891L - SIP failure Rs 2000 icici server issue",
+      "description": "SIP Rs 2000 ICICI Bank rejected. Customer insists account has sufficient balance.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5031",
+    "summary": "ZXCVB7891L - SIP failure Rs 2000 icici server issue",
+    "description": "SIP Rs 2000 ICICI Bank rejected. Customer insists account has sufficient balance.",
+    "status": "Done",
+    "root_cause": "BANK_REJECTION",
+    "action_taken": "RETRY_EXECUTED"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5031",
+        "body": "ICICI returned code 91. Retry attempted 4h later \u2014 transaction cleared successfully.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

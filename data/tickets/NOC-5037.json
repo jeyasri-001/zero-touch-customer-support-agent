@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5037",
+    "fields": {
+      "summary": "RSTVW7890E - SIP skipped without notification",
+      "description": "Customer noticed SIP installment missing for April. No failure alert received.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5037",
+    "summary": "RSTVW7890E - SIP skipped without notification",
+    "description": "Customer noticed SIP installment missing for April. No failure alert received.",
+    "status": "Done",
+    "root_cause": "SIP_PAUSED",
+    "action_taken": "RETRIGGER_EXECUTED"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5037",
+        "body": "SIP paused due to AMC holiday flag set in error. Retrigger submitted same day.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

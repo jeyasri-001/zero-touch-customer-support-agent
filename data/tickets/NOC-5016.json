@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5016",
+    "fields": {
+      "summary": "QUVWX2345P - Payment processed portfolio not updated",
+      "description": "SIP amount debited. BSE StAR MF showing pending status.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5016",
+    "summary": "QUVWX2345P - Payment processed portfolio not updated",
+    "description": "SIP amount debited. BSE StAR MF showing pending status.",
+    "status": "Done",
+    "root_cause": "AMC_DELAY",
+    "action_taken": "WAIT_FOR_AMC"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5016",
+        "body": "AMC processing delayed due to BSE StAR MF platform intermittent issue. check_amc_processing_status showed delay of 18 hours beyond SLA. Resolved automatically once platform restored.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5026",
+    "fields": {
+      "summary": "TNVSR6621W - Client activation not reflecting in portal",
+      "description": "New investor TNVSR6621W onboarded. KYC done, but investment tab shows Account Not Active.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5026",
+    "summary": "TNVSR6621W - Client activation not reflecting in portal",
+    "description": "New investor TNVSR6621W onboarded. KYC done, but investment tab shows Account Not Active.",
+    "status": "Done",
+    "root_cause": "KYC_SYNC_DELAY",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5026",
+        "body": "Activation event lost during weekend batch. Ops manually updated portal status. Client notified.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

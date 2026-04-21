@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5040",
+    "fields": {
+      "summary": "BCDEF4567H - Mandate registration invalid account number",
+      "description": "NACH mandate registration failing with Invalid Account No error for this customer.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5040",
+    "summary": "BCDEF4567H - Mandate registration invalid account number",
+    "description": "NACH mandate registration failing with Invalid Account No error for this customer.",
+    "status": "Done",
+    "root_cause": "ACCOUNT_VALIDATION_ERROR",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5040",
+        "body": "Account number has trailing space in registration form. Corrected and resubmitted to NPCI.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

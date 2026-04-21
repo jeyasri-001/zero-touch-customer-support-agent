@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5044",
+    "fields": {
+      "summary": "XYZAB1234K - NAV not allocated after 5 business days",
+      "description": "Customer paid Rs 25000 lumpsum. Money gone from bank. Portfolio not updated. Very urgent.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5044",
+    "summary": "XYZAB1234K - NAV not allocated after 5 business days",
+    "description": "Customer paid Rs 25000 lumpsum. Money gone from bank. Portfolio not updated. Very urgent.",
+    "status": "Done",
+    "root_cause": "AMC_DELAY",
+    "action_taken": "WAIT_FOR_AMC"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5044",
+        "body": "RTA shows payment received. Unit allotment pending AMC approval. Resolved within SLA.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

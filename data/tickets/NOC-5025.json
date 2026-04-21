@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5025",
+    "fields": {
+      "summary": "MJLPQ9034R - MJLPQ9034R KYC approved status mismatch",
+      "description": "Relationship manager confirms KYC is Done at registrar but portal shows KYC Pending.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5025",
+    "summary": "Onboarding delay - MJLPQ9034R KYC approved status mismatch",
+    "description": "Relationship manager confirms KYC is Done at registrar but portal shows KYC Pending.",
+    "status": "Done",
+    "root_cause": "KYC_SYNC_DELAY",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5025",
+        "body": "Status mismatch between KRA and internal DB. Batch sync scheduled nightly; manual override applied.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

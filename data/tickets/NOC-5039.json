@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5039",
+    "fields": {
+      "summary": "UVWXY6789N - SIP paused after KYC update",
+      "description": "Customer updated KYC details last month. SIP paused automatically. Units missing.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5039",
+    "summary": "UVWXY6789N - SIP paused after KYC update",
+    "description": "Customer updated KYC details last month. SIP paused automatically. Units missing.",
+    "status": "Done",
+    "root_cause": "SIP_PAUSED",
+    "action_taken": "RETRIGGER_EXECUTED"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5039",
+        "body": "KYC update triggers auto-pause for 30 days. Customer within limit. Retrigger approved.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

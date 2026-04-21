@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5011",
+    "fields": {
+      "summary": "LPQRS2345K - SIP paused by system customer unaware",
+      "description": "Customer did not request pause but SIP stopped processing.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5011",
+    "summary": "LPQRS2345K - SIP paused by system customer unaware",
+    "description": "Customer did not request pause but SIP stopped processing.",
+    "status": "Done",
+    "root_cause": "SIP_PAUSED",
+    "action_taken": "RETRIGGER_EXECUTED"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5011",
+        "body": "System auto-paused SIP due to 3 consecutive failures as per policy. check_sip_pause_status confirmed retrigger_eligible: true. SIP retriggered after customer updated bank balance.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}

@@ -9,65 +9,136 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 
+# Deterministic mapping: PAN → issue_type the agent should diagnose.
+# Covers all 50 evaluation tickets (NOC-5001 – NOC-5047 + 3 real Jira tickets).
+CUSTOMER_PROFILES = {
+    # BANK_REJECTION — code 51 (insufficient funds)
+    "BKJPS1234A": "SIP_FAILURE",
+    "CKTRS5678B": "SIP_FAILURE",
+    "DFGTR9012C": "SIP_FAILURE",
+    "EHJKL3456D": "SIP_FAILURE",
+    "FIJKM7890E": "SIP_FAILURE",
+    # BANK_REJECTION — code 91 (bank temp unavailable)
+    "PLRTX8823B": "PAYMENT_FAILURE",
+    "QRSMN1209D": "PAYMENT_FAILURE",
+    "WKRTP5567G": "PAYMENT_FAILURE",
+    "BMNQZ4401T": "PAYMENT_FAILURE",
+    "ZXCVB7891L": "PAYMENT_FAILURE",
+    # MANDATE_EXPIRY — code 54
+    "GKLMN2345F": "MANDATE_EXPIRY",
+    "HLMNO6789G": "MANDATE_EXPIRY",
+    "IMNOP0123H": "MANDATE_EXPIRY",
+    "HNMRQ3312S": "MANDATE_EXPIRY",
+    "FQLKM8890V": "MANDATE_EXPIRY",
+    "KPRTZ2201X": "MANDATE_EXPIRY",
+    "DVNWQ6678Y": "MANDATE_EXPIRY",
+    # SIP_PAUSED
+    "JNOPQ4567I": "SIP_PAUSED",
+    "KOPQR8901J": "SIP_PAUSED",
+    "LPQRS2345K": "SIP_PAUSED",
+    "LMNOP3456Q": "SIP_PAUSED",
+    "RSTVW7890E": "SIP_PAUSED",
+    "GHIJK2345M": "SIP_PAUSED",
+    "UVWXY6789N": "SIP_PAUSED",
+    # ACCOUNT_VALIDATION_ERROR
+    "MQRST6789L": "ACCOUNT_VALIDATION_ERROR",
+    "NRSTU0123M": "ACCOUNT_VALIDATION_ERROR",
+    "OSTUV4567N": "ACCOUNT_VALIDATION_ERROR",
+    "BCDEF4567H": "ACCOUNT_VALIDATION_ERROR",
+    "IJKLM8901P": "ACCOUNT_VALIDATION_ERROR",
+    "NOPQR2345C": "ACCOUNT_VALIDATION_ERROR",
+    # AMC_DELAY
+    "PTUVW8901O": "AMC_DELAY",
+    "QUVWX2345P": "AMC_DELAY",
+    "RVWXY6789Q": "AMC_DELAY",
+    "STUVW6789J": "AMC_DELAY",
+    "XYZAB1234K": "AMC_DELAY",
+    "CDEFG5678L": "AMC_DELAY",
+    # SYSTEM_ERROR
+    "SWXYZ0123R": "SYSTEM_ERROR",
+    "TXYZA4567S": "SYSTEM_ERROR",
+    "UYZAB8901T": "SYSTEM_ERROR",
+    "HIJKL9012M": "SYSTEM_ERROR",
+    "MNOPQ3456N": "SYSTEM_ERROR",
+    # KYC_SYNC_DELAY — no financial transaction; agent should detect portal sync issue
+    "ABYPS2412H": "KYC_SYNC_DELAY",
+    "CRPLM7823K": "KYC_SYNC_DELAY",
+    "HRTNK4567F": "KYC_SYNC_DELAY",
+    "MJLPQ9034R": "KYC_SYNC_DELAY",
+    "TNVSR6621W": "KYC_SYNC_DELAY",
+    # UNKNOWN — real Jira tickets with sparse descriptions
+    "AHYPR8658L": "SIP_PAUSED",   # real: NOC-21854 (SIP not processed)
+    "ATUPN0386P": "SIP_FAILURE",  # real: NOC-1346 (payment failure)
+    "AKCPS3067R": "MANDATE_EXPIRY",  # real: NOC-11734 (mandate issue)
+    "VZABC2345U": "SIP_FAILURE",  # NOC-5021 (sparse — any failure)
+}
+
+
 class MockDatabase:
     """Mock database with realistic fintech data"""
-    
+
     def __init__(self):
         self.transactions = []
         self.mandates = []
         self.event_logs = []
         self._seed_data()
-    
+
     def _seed_data(self):
-        """Seed database with realistic patterns based on real tickets"""
-        
-        # Real customer IDs from fetched tickets
-        real_customers = [
-            {"id": "AHYPR8658L", "name": "Rajesh Kumar", "email": "rajesh.k@email.com"},
-            {"id": "ATUPN0386P", "name": "Priya Sharma", "email": "priya.s@email.com"},
-            {"id": "AKCPS3067R", "name": "Vikram Patel", "email": "vikram.p@email.com"},
-        ]
-        
-        # Generate 50 realistic transactions
-        for i in range(50):
-            customer = random.choice(real_customers)
-            
-            # Create transaction with realistic patterns
-            txn = self._generate_transaction(
-                customer_id=customer["id"],
-                index=i
-            )
+        """Seed one deterministic transaction + mandate + logs per customer PAN."""
+        for i, (pan, issue_type) in enumerate(CUSTOMER_PROFILES.items()):
+            txn = self._generate_transaction(customer_id=pan, index=i, issue_type=issue_type)
             self.transactions.append(txn)
-            
-            # Create corresponding mandate
-            mandate = self._generate_mandate(
-                customer_id=customer["id"],
-                transaction=txn
-            )
+
+            mandate = self._generate_mandate(customer_id=pan, transaction=txn)
             if mandate:
                 self.mandates.append(mandate)
-            
-            # Create event logs
-            logs = self._generate_event_logs(txn)
-            self.event_logs.extend(logs)
+
+            self.event_logs.extend(self._generate_event_logs(txn))
     
-    def _generate_transaction(self, customer_id, index):
-        """Generate a realistic transaction"""
-        
-        # Distribution based on real ticket analysis
-        issue_types = [
-            ("SIP_FAILURE", 0.4),      # 40% - Bank code 51
-            ("MANDATE_EXPIRY", 0.3),   # 30% - Bank code 54  
-            ("PAYMENT_FAILURE", 0.2),  # 20% - Bank code 91
-            ("SUCCESS", 0.1),          # 10% - Success
-        ]
-        
-        issue_type = random.choices(
-            [t[0] for t in issue_types],
-            weights=[t[1] for t in issue_types]
-        )[0]
-        
-        # Bank codes based on issue type
+    def _generate_transaction(self, customer_id, index, issue_type=None):
+        """Generate a realistic transaction with a deterministic issue_type."""
+        if issue_type is None:
+            issue_type = "SIP_FAILURE"
+
+        if issue_type == "KYC_SYNC_DELAY":
+            # No financial transaction for KYC issues — create a minimal placeholder
+            # so get_customer_transactions returns something, but logs will reveal the real cause.
+            txn_id = f"TXN{datetime.now().strftime('%Y%m%d')}{index:06d}"
+            txn_date = datetime.now() - timedelta(days=random.randint(1, 10))
+            return {
+                "transaction_id": txn_id,
+                "customer_id": customer_id,
+                "mandate_id": None,
+                "amount": 0.0,
+                "status": "NOT_APPLICABLE",
+                "bank_code": None,
+                "rejection_reason": "KYC_PORTAL_SYNC_PENDING",
+                "retry_eligible": False,
+                "created_at": txn_date.isoformat(),
+                "updated_at": txn_date.isoformat(),
+                "sip_date": txn_date.strftime("%Y-%m-%d"),
+                "issue_type": "KYC_SYNC_DELAY",
+                "notes": "KYC activated at registrar but portal status not yet synced",
+            }
+
+        if issue_type == "SYSTEM_ERROR":
+            txn_id = f"TXN{datetime.now().strftime('%Y%m%d')}{index:06d}"
+            txn_date = datetime.now() - timedelta(days=random.randint(1, 10))
+            return {
+                "transaction_id": txn_id,
+                "customer_id": customer_id,
+                "mandate_id": f"MAN{customer_id[-4:]}{index:03d}",
+                "amount": random.choice([1000, 2000, 5000]),
+                "status": "FAILED",
+                "bank_code": "99",
+                "rejection_reason": "INTERNAL_SYSTEM_ERROR",
+                "retry_eligible": False,
+                "created_at": txn_date.isoformat(),
+                "updated_at": txn_date.isoformat(),
+                "sip_date": txn_date.strftime("%Y-%m-%d"),
+                "issue_type": "SYSTEM_ERROR",
+            }
+
         if issue_type == "SIP_FAILURE":
             bank_code = "51"
             rejection_reason = "INSUFFICIENT_FUNDS"
@@ -83,24 +154,32 @@ class MockDatabase:
             rejection_reason = "BANK_TEMP_UNAVAILABLE"
             status = "FAILED"
             retry_eligible = True
+        elif issue_type == "SIP_PAUSED":
+            bank_code = None
+            rejection_reason = "SIP_PAUSED_BY_SYSTEM"
+            status = "NOT_SUBMITTED"
+            retry_eligible = False
+        elif issue_type == "ACCOUNT_VALIDATION_ERROR":
+            bank_code = None
+            rejection_reason = "ACCOUNT_VALIDATION_FAILED"
+            status = "FAILED"
+            retry_eligible = False
+        elif issue_type == "AMC_DELAY":
+            bank_code = None
+            rejection_reason = "AMC_PROCESSING_DELAYED"
+            status = "PENDING"
+            retry_eligible = False
         else:  # SUCCESS
             bank_code = None
             rejection_reason = None
             status = "SUCCESS"
             retry_eligible = False
-        
-        # Generate transaction ID
+
         txn_id = f"TXN{datetime.now().strftime('%Y%m%d')}{index:06d}"
-        
-        # Generate mandate ID
         mandate_id = f"MAN{customer_id[-4:]}{index:03d}"
-        
-        # Random amount (SIP amounts)
         amount = random.choice([500, 1000, 2000, 5000, 10000, 25000])
-        
-        # Random date in last 30 days
         txn_date = datetime.now() - timedelta(days=random.randint(1, 30))
-        
+
         return {
             "transaction_id": txn_id,
             "customer_id": customer_id,
@@ -188,8 +267,57 @@ class MockDatabase:
             "level": "INFO"
         })
         
-        # Log 4: Bank response
-        if transaction["status"] == "FAILED":
+        # Log 4: Bank response (varies by issue type)
+        issue_type = transaction.get("issue_type", "")
+        if issue_type == "KYC_SYNC_DELAY":
+            logs.append({
+                "log_id": f"LOG{txn_id}04",
+                "transaction_id": txn_id,
+                "log_type": "kyc_portal_sync_pending",
+                "timestamp": created_at.isoformat(),
+                "message": (
+                    "KYC status ACTIVE at CAMS/CDSL registrar but portal DB shows KYC_PENDING. "
+                    "Sync job missed this PAN. Manual portal activation required."
+                ),
+                "level": "WARN"
+            })
+        elif issue_type == "SYSTEM_ERROR":
+            logs.append({
+                "log_id": f"LOG{txn_id}04",
+                "transaction_id": txn_id,
+                "log_type": "internal_system_error",
+                "timestamp": created_at.isoformat(),
+                "message": "Internal system error during transaction processing — code 99. Ops team notified.",
+                "level": "ERROR"
+            })
+        elif issue_type == "SIP_PAUSED":
+            logs.append({
+                "log_id": f"LOG{txn_id}04",
+                "transaction_id": txn_id,
+                "log_type": "sip_submission_skipped",
+                "timestamp": created_at.isoformat(),
+                "message": "SIP not submitted to exchange — plan paused via editSystematicPlanSip (pauseMonth:1)",
+                "level": "WARN"
+            })
+        elif issue_type == "ACCOUNT_VALIDATION_ERROR":
+            logs.append({
+                "log_id": f"LOG{txn_id}04",
+                "transaction_id": txn_id,
+                "log_type": "mandate_registration_failed",
+                "timestamp": created_at.isoformat(),
+                "message": "Account validation failed — bank account number length mismatch (expected 15-16 digits, got 10)",
+                "level": "ERROR"
+            })
+        elif issue_type == "AMC_DELAY":
+            logs.append({
+                "log_id": f"LOG{txn_id}04",
+                "transaction_id": txn_id,
+                "log_type": "amc_processing_queued",
+                "timestamp": created_at.isoformat(),
+                "message": "Payment accepted by bank. NAV allocation pending at AMC — processing delayed beyond SLA",
+                "level": "WARN"
+            })
+        elif transaction["status"] == "FAILED":
             logs.append({
                 "log_id": f"LOG{txn_id}04",
                 "transaction_id": txn_id,
@@ -303,6 +431,110 @@ class MockDatabase:
             "is_repeat_customer": len(past_tickets) > 1
         }
     
+    def get_sip_pause_status(self, customer_id):
+        """Return SIP pause details for a customer, if any SIPs are paused."""
+        txns = self.get_transactions_by_customer(customer_id, limit=20)
+        paused = [t for t in txns if t.get("issue_type") == "SIP_PAUSED"]
+        if not paused:
+            return {"customer_id": customer_id, "sip_paused": False}
+
+        t = paused[0]
+        pause_date = (datetime.fromisoformat(t["created_at"]) - timedelta(days=2)).strftime("%Y-%m-%d")
+        resume_date = (datetime.now() + timedelta(days=random.randint(15, 45))).strftime("%Y-%m-%d")
+        return {
+            "customer_id": customer_id,
+            "sip_paused": True,
+            "paused_transaction_id": t["transaction_id"],
+            "pause_reason": "Investor requested pause via support / ops team action",
+            "paused_by": "ops-team@fundsindia.com",
+            "pause_date": pause_date,
+            "expected_resume_date": resume_date,
+            "api_action": "editSystematicPlanSip with pauseMonth:1",
+            "retrigger_eligible": True,
+        }
+
+    def get_account_validation_history(self, customer_id):
+        """Return account number validation errors for a customer."""
+        txns = self.get_transactions_by_customer(customer_id, limit=20)
+        errors = [t for t in txns if t.get("issue_type") == "ACCOUNT_VALIDATION_ERROR"]
+        if not errors:
+            return {"customer_id": customer_id, "validation_errors": []}
+
+        bank_names = ["Axis Bank Ltd", "HDFC Bank", "ICICI Bank", "Kotak Mahindra Bank"]
+        bank = random.choice(bank_names)
+        expected_len = 15 if "Axis" in bank else 16
+        actual_len = random.choice([10, 11, 12])
+        return {
+            "customer_id": customer_id,
+            "validation_errors": [
+                {
+                    "transaction_id": errors[0]["transaction_id"],
+                    "bank_name": bank,
+                    "error_type": "ACCOUNT_NUMBER_LENGTH_MISMATCH",
+                    "expected_length": expected_len,
+                    "actual_length": actual_len,
+                    "error_message": (
+                        f"Bank account number for {bank} must be {expected_len} digits. "
+                        f"Received {actual_len} digits. Leading zeros may have been stripped."
+                    ),
+                    "recommended_fix": "Pad account number with leading zeros to reach required length",
+                }
+            ],
+            "total_errors": len(errors),
+        }
+
+    def get_amc_processing_status(self, transaction_id):
+        """Return AMC processing status for a transaction."""
+        txn = self.get_transaction(transaction_id)
+        if not txn:
+            return {"error": f"Transaction {transaction_id} not found"}
+        if txn.get("issue_type") != "AMC_DELAY":
+            return {
+                "transaction_id": transaction_id,
+                "amc_status": "NOT_APPLICABLE",
+                "message": "Transaction is not in AMC processing queue",
+            }
+        submitted_at = datetime.fromisoformat(txn["created_at"])
+        expected_by = submitted_at + timedelta(hours=4)
+        delay_hours = random.randint(6, 48)
+        return {
+            "transaction_id": transaction_id,
+            "amc_status": "DELAYED",
+            "payment_received": True,
+            "nav_allocated": False,
+            "submitted_to_amc_at": submitted_at.isoformat(),
+            "expected_nav_by": expected_by.isoformat(),
+            "current_delay_hours": delay_hours,
+            "delay_reason": random.choice([
+                "High volume during month-end processing",
+                "AMC system maintenance window",
+                "BSE StAR MF platform intermittent issue",
+            ]),
+            "estimated_resolution": (datetime.now() + timedelta(hours=random.randint(2, 8))).isoformat(),
+            "action_required": "Wait for AMC to process — no retry needed",
+        }
+
+    def execute_sip_retrigger(self, customer_id):
+        """Re-trigger a paused SIP for a customer."""
+        pause_info = self.get_sip_pause_status(customer_id)
+        if not pause_info.get("sip_paused"):
+            return {"success": False, "error": "No paused SIP found for this customer"}
+        if not pause_info.get("retrigger_eligible"):
+            return {"success": False, "error": "SIP is not eligible for retrigger at this time"}
+
+        txn_id = pause_info["paused_transaction_id"]
+        txn = self.get_transaction(txn_id)
+        if txn:
+            txn["status"] = "PENDING"
+            txn["rejection_reason"] = None
+            txn["issue_type"] = "SUCCESS"
+        return {
+            "success": True,
+            "message": "SIP retriggered successfully — submitted to exchange queue",
+            "transaction_id": txn_id,
+            "new_status": "PENDING",
+        }
+
     def execute_retry(self, transaction_id):
         """Simulate a retry operation"""
         txn = self.get_transaction(transaction_id)

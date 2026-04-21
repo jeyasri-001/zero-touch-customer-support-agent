@@ -1,0 +1,31 @@
+{
+  "ticket": {
+    "key": "NOC-5014",
+    "fields": {
+      "summary": "OSTUV4567N - HDFC mandate invalid account number error",
+      "description": "New customer cannot complete mandate. Account validation failing.",
+      "status": {
+        "name": "Done"
+      },
+      "attachment": []
+    }
+  },
+  "analysis": {
+    "key": "NOC-5014",
+    "summary": "OSTUV4567N - HDFC mandate invalid account number error",
+    "description": "New customer cannot complete mandate. Account validation failing.",
+    "status": "Done",
+    "root_cause": "ACCOUNT_VALIDATION_ERROR",
+    "action_taken": "ESCALATE_TO_HUMAN"
+  },
+  "comments": {
+    "total": 1,
+    "comments": [
+      {
+        "id": "comment_NOC-5014",
+        "body": "check_account_validation_history: HDFC account number had leading zeros stripped during data entry. Corrected to 16-digit format. Mandate activated.",
+        "author": "support-agent@fundsindia.com"
+      }
+    ]
+  }
+}
